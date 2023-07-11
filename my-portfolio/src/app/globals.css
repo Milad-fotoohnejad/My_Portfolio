@@ -2,20 +2,96 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
 
 body {
-  
+
 }
+
+
+.Image{
+  z-index: -1;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+.nav-link {
+  margin: 1em 0;
+  color: #333;
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+.nav-link:hover {
+  color: #007bff;
+}
+
+.dropdown {
+  position: relative;
+  display: block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+  left: 0;
+  top: 100%;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropbtn {
+  background-color: #f8f9fa;
+  color: #333;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.dropbtn:hover {
+  color: #007bff;
+}
+
+/* the page.tsx css is below */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 8fr; /* Defines two columns: nav takes 1fr and content takes 3fr */
+  grid-template-rows: 1fr auto; /* Defines two rows: the content/footer area takes up the remaining space and footer takes up only the space it needs */
+  grid-template-areas: 
+    "nav content"
+    "nav footer"; /* Now nav is in the left column, content and footer are in the right column */
+  height: 100vh;
+}
+
+
+.navigation {
+  grid-area: nav;
+  background-color: #35ff42;
+  padding: 1em;
+}
+
+.content {
+  grid-area: content;
+  padding: 1em;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #fe6943;
+  padding: 1em;
+}
+
