@@ -1,11 +1,12 @@
-import React, {ReactNode} from "react";
+import React from "react";
 import HomePage from "./pages/home";
 import Navigation from "./components/navigation";
+import Footer from "./components/footer";
 
 
-interface PageLayoutProps {
-  children: React.ReactNode;
-}
+// interface PageLayoutProps {
+//   children: React.ReactNode;
+// }
 
 
 export default function Home() {
@@ -18,7 +19,7 @@ export default function Home() {
         <HomePage />
       </div>
       <div className="footer">
-        Footer Content Footer Content Footer Content Footer Content
+        <Footer />
       </div>
     </div>
   );

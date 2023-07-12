@@ -1,30 +1,30 @@
 import React from 'react';
-import Link from 'next/link';
+import NavLink from 'next/link';
 
 
 const Navigation = () => {
     return (
-      <div className="nav">
-        <Link href="/">
+      <div className="nav font-mono">
+        <NavLink href="/">
           <button className="nav-link">Home</button>
-        </Link>
+        </NavLink>
         <div className="dropdown">
           <button className="dropbtn">Projects</button>
           <div className="dropdown-content">
-            <Link href="/project1">
-              <button className="nav-link">Project 1</button>
-            </Link>
-            <Link href="/project2">
-              <button className="nav-link">Project 2</button>
-            </Link>
-            <Link href="/project3">
-              <button className="nav-link">Project 3</button>
-            </Link>
+            <NavLink href="/project1">
+              <button className="nav-link">Classic Mafia Game</button>
+            </NavLink>
+            <NavLink href="/project2">
+              <button className="nav-link">VIU Culinary App</button>
+            </NavLink>
+            <NavLink href="/project3">
+              <button className="nav-link">WhichCam Web WordPress</button>
+            </NavLink>
           </div>
         </div>
-        <Link href="/contact">
-          <button className="nav-link">Contact</button>
-        </Link>
+        <NavLink href="/contact">
+          <button className="nav-link">Contact Me</button>
+        </NavLink>
       </div>
     );
   };

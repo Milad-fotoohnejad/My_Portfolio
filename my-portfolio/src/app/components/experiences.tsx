@@ -2,7 +2,7 @@ import React from "react";
 
 export const Experiences = () => {
   return (
-    <section className="p-4 mt-4 bg-blue-100 rounded-md">
+    <section className="op-back p-4 text-white rounded-md">
       <h1 className="text-3xl font-bold">Experiences</h1>
       <ul className="list-disc list-inside mt-2">
         <li>React.js / Next.js</li>
