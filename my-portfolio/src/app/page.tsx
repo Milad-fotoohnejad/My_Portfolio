@@ -18,9 +18,6 @@ export default function Home() {
       <div className="content">
         <HomePage />
       </div>
-      <div className="footer">
-        <Footer />
-      </div>
     </div>
   );
 };
