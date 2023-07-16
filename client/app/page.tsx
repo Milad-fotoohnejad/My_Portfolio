@@ -1,7 +1,7 @@
 import React from "react";
 import HomePage from "./pages/home";
 import Navigation from "./components/navigation";
-import Footer from "./components/footer";
+import "./globals.css";
 
 
 // interface PageLayoutProps {
@@ -21,7 +21,3 @@ export default function Home() {
     </div>
   );
 };
-
-
-
-

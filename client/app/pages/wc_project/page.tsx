@@ -1,0 +1,34 @@
+import React, { useState } from 'react';
+import Image from 'next/image';
+import { FaJava, FaReact, FaNodeJs, FaDatabase } from 'react-icons/fa';
+
+
+export default function CmProject() {
+  return (
+    <div className='content'>
+      <h1 className='font-mono text-4xl mb-6'>Classic Mafia Game</h1>
+
+      <section>
+        <h2 className='font-mono text-2xl mb-4'>Introduction</h2>
+        <p className='mb-6'>
+          Description about the project goes here.
+        </p>
+      </section>
+
+      <section>
+
+      </section>
+
+      <section>
+        <h2 className='font-mono text-2xl mb-4'>Tech Stack</h2>
+        <div className='flex space-x-4'>
+          <FaJava className='text-3xl' />
+          <FaReact className='text-3xl' />
+          <FaNodeJs className='text-3xl' />
+          <FaDatabase className='text-3xl' />
+          {/* Add more icons as needed */}
+        </div>
+      </section>
+    </div>
+  );
+}
