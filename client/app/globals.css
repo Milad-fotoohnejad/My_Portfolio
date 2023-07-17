@@ -27,14 +27,13 @@ body {
 }
 
 .profile-img {
-  margin: 30px auto;
   margin-right: 5px;
-  margin-bottom: -50%;
+  margin-top: 20%;
   align-items: center;
 }
 
 .nav {
-  margin-top: 80%;
+  margin-top: 10%;
   z-index: 10;
   display: flex;
   flex-direction: column;
@@ -127,8 +126,8 @@ body {
   border-style: solid;
   border-color: transparent #1cb3c8 transparent transparent;
 }
-
 /* This will add a small arrow at the left side of the dropdown for a more creative look */
+
 
 
 .dropbtn:hover {
@@ -139,7 +138,7 @@ body {
 /* the page.tsx css is below */
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr 8fr;
+  grid-template-columns: 1fr 7fr;
   /* Defines two columns: nav takes 1fr and content takes 3fr */
   grid-template-rows: 1fr auto;
   /* Defines two rows: the content/footer area takes up the remaining space and footer takes up only the space it needs */
@@ -151,12 +150,20 @@ body {
 
 
 .navigation {
+  position: fixed;
   z-index: 10;
   grid-area: nav;
   background-color: #3c415edf;
   padding: 1em;
-  display: flex;
+  display: grid;
+  grid-template-rows: auto auto auto;
+  justify-items: center;
+  align-items: center;
+  top: 0;
+  grid-gap: 20px;
+  height: 100%;
 }
+
 
 .content {
   grid-area: content;
@@ -174,6 +181,7 @@ body {
   align-items: center;
   color: white;
   line-height: 1;
+  margin-top: -20%;
 }
 
 .footer-content {
@@ -181,14 +189,13 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 1em;
-  margin-top: 3rem;
   flex-direction: column;
 }
 
 .footer-icon {
   margin-top: 2rem;
   color: #ffffff;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   /* Adjust the icon size here */
   transition: color 0.2s;
 }
@@ -199,7 +206,43 @@ body {
 }
 
 .copyright {
-  font-size: 0.6rem;
+  font-size: 0.8rem;
   color: aliceblue;
   margin-top: 2rem;
+}
+
+/* Home page styles */
+/* make a grid of two column for the intro */
+.intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  justify-items: center;
+}
+
+.intro div:nth-child(odd) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro div:nth-child(even) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-column: 2;
+}
+
+.intro div:nth-child(2n) {
+  grid-column: 2;
+}
+
+intro-img1{
+  width: 50%;
+  height: 50%;
+}
+
+.intro-img2{
+  width: 50%;
+  height: 50%;
 }

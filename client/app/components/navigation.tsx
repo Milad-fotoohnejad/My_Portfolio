@@ -46,6 +46,7 @@ const Navigation = () => {
         <footer className="footer">
           <div className="footer-content">
             <a
+            title="LinkedIn"
               href="https://linkedin.com/in/milad-fotoohnejad/"
               target="_blank"
               rel="noreferrer"
@@ -54,6 +55,7 @@ const Navigation = () => {
               <FaLinkedin />
             </a>
             <a
+              title="GitHub"
               href="https://github.com/Milad-fotoohnejad"
               target="_blank"
               rel="noreferrer"
@@ -62,6 +64,7 @@ const Navigation = () => {
               <FaGithub />
             </a>
             <a
+              title="Email"
               href="mailto:milad.fotoohnejad@gmail.com"
               target="_blank"
               rel="noreferrer"
@@ -70,6 +73,7 @@ const Navigation = () => {
               <FaEnvelope />
             </a>
             <a
+              title="Resume"
               href="https://drive.google.com/file/d/1jRzwSHt3A7NgTtB2D0iVkPMYbZBVeboC/view?usp=sharing"
               target="_blank"
               rel="noreferrer"
@@ -77,8 +81,8 @@ const Navigation = () => {
             >
               <FaReceipt />
             </a>
-            <div className="copyright">
-              &copy; {new Date().getFullYear()} Milad Fotoohnejad.
+            <div className="copyright text-center">
+              &copy; {new Date().getFullYear()} <br></br> Milad Fotoohnejad
             </div>
           </div>
         </footer>
