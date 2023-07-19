@@ -6,25 +6,31 @@ import lottie from "lottie-web";
 
 
 export const Introduction = () => {
-  // render my lottie json file here
   const container = React.useRef<HTMLDivElement>(null);
+  let animation: any;
+
   React.useEffect(() => {
-    lottie.loadAnimation({
+    animation = lottie.loadAnimation({
       container: container.current as HTMLDivElement,
       renderer: "svg",
       loop: true,
       autoplay: true,
       animationData: require("../../public/animation.json"),
     });
-  }
-  );
+
+    // Cleanup function
+    return () => {
+      animation.destroy();
+    };
+  }, []);
+
 
   return (
     <div className="intro op-back p-4 mb-5 text-white text-justify rounded-md font-sans">
       <div>
         <h1 className="text-6xl font-bold m-5 text-green-400">Hi, I'm Milad</h1>
         <p className="text-xl p1">
-          <span className="text-2xl text-green-300"> Who am I?</span>
+          <span className="text-2xl text-green-300">Who am I?</span>
           <br />
           Welcome to my portfolio! I'm a Web and Mobile Application Developer
           with a deep-rooted love for crafting exceptional digital experiences.
@@ -32,16 +38,17 @@ export const Introduction = () => {
           make a positive impact on people's lives.
         </p>
       </div>
-      <div className="rounded">
+      <div className="">
         <Image
-          src="/profile2-rmbg.png"
+          src="/profile2-rmbg2.png"
           width={256}
           height={256}
           alt="Nothing"
+          className="rounded-full"
         />
       </div>
       <div>
-        <div className="lottie" ref={container}></div>
+        {/* <div className="lottie" ref={container}></div> */}
       </div>
       <div>
         <p className="text-xl p2">
@@ -52,15 +59,7 @@ export const Introduction = () => {
           expertise and creative problem-solving skills to every project I
           undertake. My goal is to develop robust, scalable, and intuitive
           applications that seamlessly integrate functionality, aesthetics, and
-          usability. Over the school years, I have honed my skills in front-end
-          and back-end development, leveraging my proficiency in Java, HTML,
-          CSS, JavaScript, and frameworks such as React. I am also experienced
-          in working with server-side technologies like Node.js, Express.js and
-          databases such as MySQL and Firebase. My understanding of responsive
-          design principles ensures that the applications I build provide an
-          optimal user experience across different devices and platforms. What
-          sets me apart is my ability to transform complex concepts into
-          elegant, efficient, and user-friendly applications.
+          usability. 
         </p>
       </div>
     </div>

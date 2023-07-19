@@ -66,7 +66,7 @@ body {
 
 .nav-link:hover {
   z-index: 10;
-  color: #1cb3c8;
+  color: #48DE80;
 }
 
 .dropdown {
@@ -124,7 +124,7 @@ body {
   top: calc(50% - 10px);
   border-width: 10px;
   border-style: solid;
-  border-color: transparent #1cb3c8 transparent transparent;
+  border-color: transparent #48DE80 transparent transparent;
 }
 /* This will add a small arrow at the left side of the dropdown for a more creative look */
 
@@ -132,7 +132,7 @@ body {
 
 .dropbtn:hover {
   z-index: 10;
-  color: #1cb3c8;
+  color: #48DE80;
 }
 
 /* the page.tsx css is below */
@@ -201,7 +201,7 @@ body {
 }
 
 .footer-icon:hover {
-  color: #1cb3c8;
+  color: #48DE80;
   /* Change the hover color to match your theme */
 }
 
@@ -241,6 +241,7 @@ intro-img1{
   width: 50%;
   height: 50%;
 }
+
 
 .intro-img2{
   width: 50%;

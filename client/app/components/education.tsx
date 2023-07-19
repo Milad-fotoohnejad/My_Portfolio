@@ -1,31 +1,103 @@
 import React from "react";
+import Image from "next/image";
 
 export const Education = () => {
-  return (
-    <div>
-      <section className="op-back p-4 mt-5 mb-5 text-white rounded-md">
-        <h1 className="text-3xl font-bold">
-          ITAS - Web And Mobile Application Development
-        </h1>
-        <h3 className="text-2xl font-bold">
-          Vancouver Island University (VIU), BC
-        </h3>
-        <p className="text-xl mt-2">
-          Here I studied a two year full time Diploma program at VIU.
-        </p>
-      </section>
+  const skills = [
+    "HTML",
+    "JavaScript",
+    "ReactJS",
+    "NextJS",
+    "CSS",
+    "TailwinCSS",
+    "Bootstrap",
+    "ExpressJS",
+    "NodeJS",
+    "WebSockets",
+    "PHP",
+    "SQL",
+    "NoSQL",
+    "Firebase",
+    "DevOps",
+    "WordPress",
+    "Git",
+    "GitHub",
+    "GitLab",
+    "Docker",
+    "CI/CD",
+    "unit testing",
+    "end-to-end testing",
+  ];
 
-      <section className="op-back p-4 mt-5 mb-5 text-white rounded-md">
-        <h1 className="text-3xl font-bold">
-          Industrial Engineering - Industrial Safety
+  return (
+    <div className="flex flex-col md:flex-row items-center justify-between op-back p-5 rounded-md font-sans">
+      <div className="w-full md:w-1/2 m-2">
+        <h1 className="text-6xl font-bold m-5 text-green-400">I studied...</h1>
+        <div className="w-full op-back p-5 rounded-lg shadow-lg my-5">
+          <div className="flex items-center space-x-5">
+            <Image
+              src="/viu_logo.png"
+              width={52}
+              height={52}
+              alt="Nothing"
+              className="rounded-full"
+            />
+            <div className="block pl-2 font-semibold text-xl self-start text-gray-200">
+              <h2 className="leading-relaxed text-green-400">
+                ITAS - Web And Mobile Application Development
+              </h2>
+              <p className="text-sm text-gray-100 leading-none mt-1">
+                Vancouver Island University (VIU), BC
+              </p>
+            </div>
+          </div>
+          <div className="mt-5">
+            <p className="text-gray-200">
+              Here I studied a two year full time Diploma program at VIU.
+            </p>
+          </div>
+        </div>
+
+        <div className="w-full op-back p-5 rounded-lg shadow-lg my-5 text-white">
+          <div className="flex items-center space-x-5">
+            <Image
+              src="/IAU_logo.png"
+              width={52}
+              height={52}
+              alt="Nothing"
+              className="rounded-full"
+            />
+            <div className="block pl-2 font-semibold text-xl self-start text-gray-200">
+              <h2 className="leading-relaxed text-green-400">
+                Industrial Engineering - Industrial Safety
+              </h2>
+              <p className="text-sm text-gray-100 leading-none mt-1">
+                Islamic Azad University, Shiraz
+              </p>
+            </div>
+          </div>
+          <div className="mt-5">
+            <p className="text-gray-200">
+              Here I studied a four year full time Diploma program at IAU.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div className="w-full md:w-1/2 m-2">
+        <h1 className="text-6xl font-bold m-5 text-green-400">
+          My skills are...
         </h1>
-        <h3 className="text-2xl font-bold">
-          Islamic Azad University, Shiraz
-        </h3>
-        <p className="text-xl mt-2">
-          Here I studied a four year full time Diploma program at IAU.
-        </p>
-      </section>
+        <div className="flex flex-wrap justify-around">
+          {skills.map((skill, index) => (
+            <button
+              key={index}
+              className="inline-block mt-5 m-2 op-back px-5 py-2 rounded-lg shadow-lg text-white transition-colors duration-200 ease-in-out hover:bg-green-400"
+            >
+              {skill}
+            </button>
+          ))}
+        </div>
+      </div>
     </div>
   );
 };
