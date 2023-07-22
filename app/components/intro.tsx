@@ -27,14 +27,14 @@ export const Introduction = () => {
   return (
     <div className="intro op-back p-4 mb-5 text-white text-justify rounded-md font-sans">
       <div>
-        <h1 className="text-6xl font-bold m-5 text-green-400">Hi, I'm Milad</h1>
+        <h1 className="text-6xl font-bold m-5 text-green-400">Hi, I am Milad</h1>
         <p className="text-xl p1">
           <span className="text-2xl text-green-300">Who am I?</span>
           <br />
           Welcome to my portfolio! I am a Web and Mobile Application Developer
           with a deep-rooted love for crafting exceptional digital experiences.
           My mission is to create innovative and user-centric solutions that
-          make a positive impact on people's lives.
+          make a positive impact on peoples lives.
         </p>
       </div>
       <div className="">
