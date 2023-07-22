@@ -17,7 +17,7 @@ export const Introduction = () => {
       autoplay: true,
       animationData: require("../../public/animation.json"),
     });
-    
+
     return () => {
       animation.destroy();
     };
@@ -31,7 +31,7 @@ export const Introduction = () => {
         <p className="text-xl p1">
           <span className="text-2xl text-green-300">Who am I?</span>
           <br />
-          Welcome to my portfolio! I'm a Web and Mobile Application Developer
+          Welcome to my portfolio! I am a Web and Mobile Application Developer
           with a deep-rooted love for crafting exceptional digital experiences.
           My mission is to create innovative and user-centric solutions that
           make a positive impact on people's lives.
