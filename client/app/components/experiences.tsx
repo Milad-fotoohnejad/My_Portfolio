@@ -7,7 +7,7 @@ export const Experiences = () => {
       title: "Culinary Web/Mobile Application",
       company: "VIU Culinary Department",
       duration: "April 2023 – June 2023",
-      location: "Shiraz, Fars, Iran",
+      location: "Nanaimo, BC",
       status: "Currently in progress",
       duties: [
         "Designed a dynamic recipe booklet built with Flutter, Firebase Database and Authentication",
@@ -29,6 +29,7 @@ export const Experiences = () => {
       title: "Quality Control Supervisor",
       company: "Neshiman Co.",
       duration: "2015 – 2016",
+      location: "Shiraz, Iran",
       status: "Completed",
       duties: [
         "Demonstrated proficiency in monitoring processes, executing quality control measures, and making informed decisions in a furniture production setting",
@@ -40,6 +41,7 @@ export const Experiences = () => {
       title: "Volunteer: KidSpeak Project",
       company: "Aiesec international",
       duration: "2016",
+      location: "Katowice, Poland",
       status: "Completed",
       duties: [
         "Contributed to a global youth-led organization dedicated to providing young people in six schools (120 students in total) with leadership development opportunities through international exchange and volunteer programs.",
@@ -55,9 +57,9 @@ export const Experiences = () => {
         {experiences.map((exp, index) => (
           <div key={index} className="w-full md:w-full op-back p-5 rounded-lg shadow-lg m-5 mx-auto">
             <div className="flex items-center space-x-5">
-              <Image src="/default_logo.png"
-                width={52}
-                height={52}
+              <Image src="/role-model.png"
+                width={72}
+                height={72}
                 alt="Nothing"
                 className="rounded-full"/>
               <div className="block pl-2 font-semibold text-xl self-start text-gray-200">
@@ -76,6 +78,7 @@ export const Experiences = () => {
           </div>
         ))}
       </div>
+      <p className="text-gray-300 text-center">Beautiful logo used here is made by: <a href="https://www.flaticon.com/free-icons/role-model" title="role model icons">Role model icons created by Flat Icons - Flaticon</a></p>
     </div>
   );
 

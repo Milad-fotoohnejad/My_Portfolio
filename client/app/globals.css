@@ -5,10 +5,10 @@
 body {
   background-size: 20px 20px;
   background-image:
-    linear-gradient(180deg, #278ea5 25%, transparent 25%),
-    linear-gradient(180deg, transparent 75%, #278ea5 75%),
-    linear-gradient(180deg, transparent 25%, #071e3d 25%),
-    linear-gradient(180deg, #071e3d 75%, transparent 75%);
+    linear-gradient(30deg, #48DE80 25%, transparent 25%),
+    linear-gradient(30deg, transparent 75%, #48DE80 75%),
+    linear-gradient(30deg, transparent 25%, #071e3d 25%),
+    linear-gradient(30deg, #071e3d 75%, transparent 75%);
   background-position: 0 0, 20px 20px, 20px 20px, 0 0;
   animation: moveBackground 10s linear infinite;
 }
@@ -31,7 +31,7 @@ body {
   margin-top: 20%;
   align-items: center;
 }
-
+/************************ Navigation **************************/
 .nav {
   margin-top: 10%;
   z-index: 10;
@@ -126,9 +126,6 @@ body {
   border-style: solid;
   border-color: transparent #48DE80 transparent transparent;
 }
-/* This will add a small arrow at the left side of the dropdown for a more creative look */
-
-
 
 .dropbtn:hover {
   z-index: 10;
@@ -139,18 +136,13 @@ body {
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 7fr;
-  /* Defines two columns: nav takes 1fr and content takes 3fr */
   grid-template-rows: 1fr auto;
-  /* Defines two rows: the content/footer area takes up the remaining space and footer takes up only the space it needs */
-  grid-template-areas:
-    "nav content";
-  /* Now nav is in the left column, content and footer are in the right column */
+  grid-template-areas: "nav content";
   height: 100vh;
 }
 
-
 .navigation {
-  position: fixed;
+  position: sticky;
   z-index: 10;
   grid-area: nav;
   background-color: #3c415edf;
@@ -161,16 +153,17 @@ body {
   align-items: center;
   top: 0;
   grid-gap: 20px;
-  height: 100%;
+  height: 100vh;
 }
-
 
 .content {
   grid-area: content;
   padding: 1em;
+  overflow-y: auto; 
+  height: 100vh;  
 }
 
-/* Footer */
+/************************** Footer **************************/
 
 .footer {
   z-index: 2;
@@ -211,7 +204,8 @@ body {
   margin-top: 2rem;
 }
 
-/* Home page styles */
+/******************* Home page styles *********************/
+
 /* make a grid of two column for the intro */
 .intro {
   display: grid;
@@ -246,4 +240,49 @@ intro-img1{
 .intro-img2{
   width: 50%;
   height: 50%;
+}
+
+
+/* ********************* Mobile View *********************** */
+
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 100% 1fr; /* Row 2 will be full and not adjust to content */
+    grid-template-areas: 
+      "nav"
+      "content"
+      "footer";
+  }
+  
+
+  /* .navigation {
+    display: flex;
+  } */
+
+  .mobile-nav {
+    display: flex;
+    text-align: center;
+    position: relative;
+    height: auto;
+    grid-template-rows: auto;
+    padding: 0.5em;
+    grid-gap: 10px;
+  }
+
+  .mobile-nav button {
+    font-size: larger;
+    background: none;
+    color: aliceblue;
+    border: none;
+  }
+
+  .content {
+    width: min-content;
+    height: auto;
+  }
+
+  .footer {
+    margin-top: 0;
+  }
 }

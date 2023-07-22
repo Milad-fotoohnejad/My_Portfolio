@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
@@ -6,15 +7,15 @@ import { FaLinkedin, FaGithub, FaEnvelope, FaReceipt } from "react-icons/fa";
 
 const Navigation = () => {
   return (
-    <div>
+    <div className="navigation">
       <div>
         <a href="/">
           <Image
             src="/logo-green2.png"
-            alt="Profile Picture"
+            alt="LOGO"
             width={150}
             height={150}
-            className="profile-img" // optional, for round images
+            className="profile-img"
           />
         </a>
       </div>
@@ -46,7 +47,7 @@ const Navigation = () => {
         <footer className="footer">
           <div className="footer-content">
             <a
-            title="LinkedIn"
+              title="LinkedIn"
               href="https://linkedin.com/in/milad-fotoohnejad/"
               target="_blank"
               rel="noreferrer"
