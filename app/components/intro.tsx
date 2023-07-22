@@ -1,4 +1,4 @@
-'use client'
+'use client';
 
 import React from "react";
 import Image from "next/image";
@@ -48,7 +48,7 @@ export const Introduction = () => {
         />
       </div>
       <div>
-        {/* <div className="lottie" ref={container}></div> */}
+        <div className="lottie" ref={container}></div>
       </div>
       <div>
         <p className="text-xl p2">
