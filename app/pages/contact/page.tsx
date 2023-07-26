@@ -1,10 +1,12 @@
 import React from "react";
+import "../../globals.css";
+import { FaLinkedin, FaGithub, FaEnvelope, FaReceipt } from "react-icons/fa";
 
 export default function Contact() {
   return (
     <div className="op-back">
-      <div className="formContent">
-        <h1>Contact Us</h1>
+      <div className="formContent font-mono">
+        <p className="title text-2xl text-green-400 mt-5">Please share you opinion with me</p>
         <form id="contactForm">
           <label htmlFor="name">Name</label>
           <input type="text" id="name" name="name" required />
@@ -21,10 +23,42 @@ export default function Contact() {
           <button type="submit">Submit</button>
         </form>
         <div className="contactInfo">
-          <h2>Find Us Here</h2>
-          <p>Address: 123 Fake Street, Faketown, FK3 4AB</p>
-          <p>Email: contact@faketown.com</p>
-          <p>Phone: 0123456789</p>
+          <a
+            title="LinkedIn"
+            href="https://linkedin.com/in/milad-fotoohnejad/"
+            target="_blank"
+            rel="noreferrer"
+            className="footer-icon"
+          >
+            <FaLinkedin />
+          </a>
+          <a
+            title="GitHub"
+            href="https://github.com/Milad-fotoohnejad"
+            target="_blank"
+            rel="noreferrer"
+            className="footer-icon"
+          >
+            <FaGithub />
+          </a>
+          <a
+            title="Email"
+            href="mailto:milad.fotoohnejad@gmail.com"
+            target="_blank"
+            rel="noreferrer"
+            className="footer-icon"
+          >
+            <FaEnvelope />
+          </a>
+          <a
+            title="Resume"
+            href="https://drive.google.com/file/d/1jRzwSHt3A7NgTtB2D0iVkPMYbZBVeboC/view?usp=sharing"
+            target="_blank"
+            rel="noreferrer"
+            className="footer-icon"
+          >
+            <FaReceipt />
+          </a>
         </div>
       </div>
     </div>

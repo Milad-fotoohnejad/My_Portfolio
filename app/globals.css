@@ -245,32 +245,36 @@ intro-img1{
 /******************* Contact page *********************/
 .formContent {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-gap: 20px;
-  align-items: start;
-  justify-items: start;
+  align-items: center;
+  justify-items: center;
   color: aliceblue;
-  height: max-content;
+  height: 100vh;
 }
 
-.formContent h1, .formContent h2 {
-  color: #48DE80;
+.title{
+  margin-bottom: -10%;
 }
 
 #contactForm {
   display: flex;
+  justify-items: center;
   flex-direction: column;
   height: min-content;
+  width: 70%;
   gap: 10px;
 }
 
 #contactForm label {
   font-size: larger;
+  justify-items: center;
 }
 
 #contactForm input, #contactForm textarea {
   padding: 10px;
   border: 2px solid #48DE80;
+  justify-items: center;
   border-radius: 5px;
   background-color: #3c415edf;
   color: aliceblue;
@@ -288,13 +292,14 @@ intro-img1{
 }
 
 #contactForm button:hover {
-  background-color: #38c172;
+  background-color: #071e3d;
 }
 
 .contactInfo {
   display: flex;
-  flex-direction: column;
-  gap: 10px;
+  flex-direction: row;
+  gap: 40px;
+  justify-items: center;
 }
 
 
