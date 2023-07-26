@@ -31,7 +31,7 @@ export const Education = () => {
   return (
     <div className="flex flex-col md:flex-row items-center justify-between op-back p-5 rounded-md font-sans">
       <div className="w-full md:w-1/2 m-2">
-        <h1 className="text-6xl font-bold m-5 text-green-400">I studied...</h1>
+        <h1 className="text-6xl font-bold m-5 text-green-400 font-mono">I studied...</h1>
         <div className="w-full op-back p-5 rounded-lg shadow-lg my-5">
           <div className="flex items-center space-x-5">
             <Image
@@ -84,7 +84,7 @@ export const Education = () => {
       </div>
 
       <div className="w-full md:w-1/2 m-2">
-        <h1 className="text-6xl font-bold m-5 text-green-400">
+        <h1 className="text-6xl font-bold m-5 text-green-400 font-mono">
           My skills are...
         </h1>
         <div className="flex flex-wrap justify-around">

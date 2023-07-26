@@ -27,7 +27,7 @@ export const Introduction = () => {
   return (
     <div className="intro op-back p-4 mb-5 text-white text-justify rounded-md font-sans">
       <div>
-        <h1 className="text-6xl font-bold m-5 text-green-400">Hi, I am Milad</h1>
+        <h1 className="text-6xl font-bold m-5 text-green-400 font-mono">Hi, I&apos;m Milad</h1>
         <p className="text-xl p1">
           <span className="text-2xl text-green-300">Who am I?</span>
           <br />

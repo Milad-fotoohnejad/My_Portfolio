@@ -52,7 +52,7 @@ export const Experiences = () => {
 
   return (
     <div className="flex flex-col items-center op-back p-5 rounded-md">
-      <h1 className="text-6xl font-bold m-5 text-green-400 w-full text-center">I experienced...</h1>
+      <h1 className="text-6xl font-bold m-5 text-green-400 w-full text-center font-mono">I experienced...</h1>
       <div className="grid md:grid-cols-2 gap-10">
         {experiences.map((exp, index) => (
           <div key={index} className="w-full md:w-full op-back p-5 rounded-lg shadow-lg m-5 mx-auto">
