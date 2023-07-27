@@ -23,8 +23,8 @@ export default function CmProject() {
         <section>
           <h2 className="font-mono text-2xl mb-4">Introduction</h2>
           <p className="mb-6">Description about the project goes here.</p>
-          <p className="mb-6">Associated with Vancouver Island University. I have developed a web application for the popular social deduction game, "Classic Mafia" for my capstone project. This real-time multiplayer game provides an engaging gameplay experience, offering players the opportunity to interact in real-time to reveal the hidden Mafia members among them.</p>
-          <p className="mb-6">My tech stack for this project comprises Firebase, ExpressJS, ReactJS, and NodeJS, a potent combination for creating a real-time, highly interactive game. I'm utilizing JavaScript (ReactJS) as the primary programming language to ensure optimal performance and wide compatibility.</p>
+          <p className="mb-6">Associated with Vancouver Island University. I have developed a web application for the popular social deduction game, Classic Mafia for my capstone project. This real-time multiplayer game provides an engaging gameplay experience, offering players the opportunity to interact in real-time to reveal the hidden Mafia members among them.</p>
+          <p className="mb-6">My tech stack for this project comprises Firebase, ExpressJS, ReactJS, and NodeJS, a potent combination for creating a real-time, highly interactive game. I&apos;m utilizing JavaScript (ReactJS) as the primary programming language to ensure optimal performance and wide compatibility.</p>
         </section>
 
         <section>
@@ -34,7 +34,7 @@ export default function CmProject() {
               {'<'}
             </button>
             {imgList.map((img, index) => (
-              <div className={index === currentImg ? 'opacity-100 duration-700 transition-opacity' : 'opacity-0 duration-700 transition-opacity'}>
+              <div key={index} className={index === currentImg ? 'opacity-100 duration-700 transition-opacity' : 'opacity-0 duration-700 transition-opacity'}>
                 <Image src={img} alt="Game image" layout="fill" objectFit="contain" />
               </div>
             ))}
