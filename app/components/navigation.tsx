@@ -1,11 +1,12 @@
-"use client";
-import React from "react";
+'use client';
+import React, {useContext} from "react";
 import Link from "next/link";
 import Image from "next/image";
-
+import { RouteContext } from "../RouteContext";
 import { FaLinkedin, FaGithub, FaEnvelope, FaReceipt } from "react-icons/fa";
 
 const Navigation = () => {
+  const { setCurrentRoute } = useContext(RouteContext);
   return (
     <div className="navigation">
       <div>
@@ -21,26 +22,16 @@ const Navigation = () => {
       </div>
       <nav>
         <div className="nav font-mono">
-          <Link href="/">
-            <button className="nav-link">Home</button>
-          </Link>
+          <button className="nav-link" onClick={() => setCurrentRoute('/')}>Home</button>
           <div className="dropdown">
             <button className="dropbtn">Projects</button>
             <div className="dropdown-content">
-              <Link href="/pages/cm_project">
-                <button className="nav-link">Classic Mafia Game</button>
-              </Link>
-              <Link href="/pages/viu_project">
-                <button className="nav-link">VIU Culinary App</button>
-              </Link>
-              <Link href="/pages/wc_project">
-                <button className="nav-link">WhichCam Web WordPress</button>
-              </Link>
+              <button className="nav-link" onClick={() => setCurrentRoute('/pages/cm_project')}>Classic Mafia Game</button>
+              <button className="nav-link" onClick={() => setCurrentRoute('/pages/viu_project')}>VIU Culinary App</button>
+              <button className="nav-link" onClick={() => setCurrentRoute('/pages/wc_project')}>WhichCam Web WordPress</button>
             </div>
           </div>
-          <Link href="/pages/contact/">
-            <button className="nav-link">Contact Me</button>
-          </Link>
+          <button className="nav-link" onClick={() => setCurrentRoute('/pages/contact')}>Contact Me</button>
         </div>
       </nav>
       <div>
