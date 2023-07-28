@@ -5,7 +5,7 @@ import { FaJava, FaReact, FaNodeJs, FaDatabase, FaGithub } from "react-icons/fa"
 
 export default function CmProject() {
   const [currentImg, setCurrentImg] = useState(0);
-  const imgList = ['/profile.jpg','/profile2-rmbg.png','/profile2-rmbg2.png']; 
+  const imgList = ['/cm1.png', '/cm2.png', '/cm3.png', '/cm4.png', '/cm5.png', '/cm6.png', '/cm7.png', '/cm8.png', '/cm9.png', '/cm10.png', '/cm11.png'];
 
   const nextSlide = () => {
     setCurrentImg(currentImg === imgList.length - 1 ? 0 : currentImg + 1);
