@@ -52,36 +52,66 @@ export const Experiences = () => {
 
   return (
     <div className="flex flex-col items-center op-back p-5 rounded-md">
-      <h1 className="text-6xl font-bold m-5 text-green-400 w-full text-center font-mono">I experienced...</h1>
+      <h1 className="text-6xl font-bold m-5 text-green-400 w-full text-center font-mono">
+        I experienced...
+      </h1>
       <div className="grid md:grid-cols-2 gap-10">
         {experiences.map((exp, index) => (
-          <div key={index} className="w-full md:w-full op-back p-5 rounded-lg shadow-lg m-5 mx-auto">
+          <div
+            key={index}
+            className="w-full md:w-full op-back p-5 rounded-lg shadow-lg m-5 mx-auto"
+          >
             <div className="flex items-center space-x-5">
-              <Image src="/role-model.png"
+              <Image
+                src="/role-model.png"
                 width={72}
                 height={72}
                 alt="Nothing"
-                className="rounded-full"/>
+                className="rounded-full"
+              />
               <div className="block pl-2 font-semibold text-xl self-start text-gray-200">
                 <h2 className="leading-relaxed text-green-400">{exp.title}</h2>
-                <p className="text-sm text-gray-100 leading-none mt-1">{exp.company}</p>
-                <p className="text-sm text-gray-100 leading-none mt-1">{exp.duration}</p>
-                <p className="text-sm text-gray-100 leading-none mt-1">{exp.location}</p>
-                <p className="text-sm text-green-400 leading-none mt-1">{exp.status}</p>
+                <p className="text-sm text-gray-100 leading-none mt-1">
+                  {exp.company}
+                </p>
+                <p className="text-sm text-gray-100 leading-none mt-1">
+                  {exp.duration}
+                </p>
+                <p className="text-sm text-gray-100 leading-none mt-1">
+                  {exp.location}
+                </p>
+                <p className="text-sm text-green-400 leading-none mt-1">
+                  {exp.status}
+                </p>
               </div>
             </div>
             <div className="mt-5">
               {exp.duties.map((duty, dutyIndex) => (
-                <p key={dutyIndex} className="text-gray-200">• {duty}</p>
+                <p key={dutyIndex} className="text-gray-200">
+                  • {duty}
+                </p>
               ))}
             </div>
           </div>
         ))}
       </div>
-      <p className="text-gray-300 text-center">Beautiful logo used here is made by: <a href="https://www.flaticon.com/free-icons/role-model" title="role model icons">Role model icons created by Flat Icons - Flaticon</a></p>
+      <div className="text-center text-xs text-gray-400">
+      <p>
+        LottieFiles is by Design Barn Inc. Copyright © 2023 Design Barn Inc. All
+        rights reserved.
+      </p>
+      <p >
+        Beautiful logo used here is made by:{" "}
+        <a
+          href="https://www.flaticon.com/free-icons/role-model"
+          title="role model icons"
+        >
+          Role model icons created by Flat Icons - Flaticon
+        </a>
+      </p>
+      </div>
     </div>
   );
-
 };
 
 export default Experiences;

@@ -59,12 +59,6 @@ export const Introduction = () => {
           undertake. My goal is to develop robust, scalable, and intuitive
           applications that seamlessly integrate functionality, aesthetics, and
           usability.
-          <div className="text-xs text-gray-400">
-            <p>
-              LottieFiles is by Design Barn Inc. Copyright © 2023 Design Barn
-              Inc. All rights reserved.
-            </p>
-          </div>
         </p>
       </div>
     </div>
