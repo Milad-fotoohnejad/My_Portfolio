@@ -4,7 +4,6 @@ import React from "react";
 import Image from "next/image";
 import lottie from "lottie-web";
 
-
 export const Introduction = () => {
   const container = React.useRef<HTMLDivElement>(null);
   let animation: any;
@@ -23,11 +22,12 @@ export const Introduction = () => {
     };
   }, []);
 
-
   return (
     <div className="intro op-back p-4 mb-5 text-white text-justify rounded-md font-sans">
       <div>
-        <h1 className="text-6xl font-bold m-5 text-green-400 font-mono">Hi, I&apos;m Milad</h1>
+        <h1 className="text-6xl font-bold m-5 text-green-400 font-mono">
+          Hi, I&apos;m Milad
+        </h1>
         <p className="text-xl p1">
           <span className="text-2xl text-green-300">Who am I?</span>
           <br />
@@ -58,7 +58,13 @@ export const Introduction = () => {
           expertise and creative problem-solving skills to every project I
           undertake. My goal is to develop robust, scalable, and intuitive
           applications that seamlessly integrate functionality, aesthetics, and
-          usability. 
+          usability.
+          <div className="text-xs text-gray-400">
+            <p>
+              LottieFiles is by Design Barn Inc. Copyright © 2023 Design Barn
+              Inc. All rights reserved.
+            </p>
+          </div>
         </p>
       </div>
     </div>
