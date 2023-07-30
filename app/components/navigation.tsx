@@ -1,9 +1,9 @@
-'use client';
-import React, {useContext} from "react";
+"use client";
+import React, { useContext } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { RouteContext } from "../RouteContext";
-import { FaLinkedin, FaGithub, FaEnvelope, FaReceipt } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaEnvelope, FaReceipt, FaAngleDown } from "react-icons/fa";
 
 const Navigation = () => {
   const { setCurrentRoute } = useContext(RouteContext);
@@ -22,16 +22,38 @@ const Navigation = () => {
       </div>
       <nav>
         <div className="nav font-mono">
-          <button className="nav-link" onClick={() => setCurrentRoute('/')}>Home</button>
+          <button className="nav-link" onClick={() => setCurrentRoute("/")}>
+            Home
+          </button>
           <div className="dropdown">
             <button className="dropbtn">Projects</button>
             <div className="dropdown-content">
-              <button className="nav-link" onClick={() => setCurrentRoute('/pages/cm_project')}>Classic Mafia Game</button>
-              <button className="nav-link" onClick={() => setCurrentRoute('/pages/viu_project')}>VIU Culinary App</button>
-              <button className="nav-link" onClick={() => setCurrentRoute('/pages/wc_project')}>WhichCam Web WordPress</button>
+              <button
+                className="nav-link"
+                onClick={() => setCurrentRoute("/pages/cm_project")}
+              >
+                Classic Mafia Game
+              </button>
+              <button
+                className="nav-link"
+                onClick={() => setCurrentRoute("/pages/viu_project")}
+              >
+                VIU Culinary App
+              </button>
+              <button
+                className="nav-link"
+                onClick={() => setCurrentRoute("/pages/wc_project")}
+              >
+                WhichCam Web WordPress
+              </button>
             </div>
           </div>
-          <button className="nav-link" onClick={() => setCurrentRoute('/pages/contact')}>Contact Me</button>
+          <button
+            className="nav-link"
+            onClick={() => setCurrentRoute("/pages/contact")}
+          >
+            Contact Me
+          </button>
         </div>
       </nav>
       <div>
@@ -79,6 +101,12 @@ const Navigation = () => {
           </div>
         </footer>
       </div>
+      <div className="scroll-down flex flex-col text-4xl items-center">
+      <p className="mb-3 text-3xl">Scroll Down</p>
+      <div className="animate-bounce">
+        <FaAngleDown />
+      </div>
+    </div>
     </div>
   );
 };
