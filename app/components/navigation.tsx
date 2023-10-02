@@ -1,6 +1,6 @@
 "use client";
 import React, { useContext } from "react";
-import { useRouter } from 'next/navigation';
+import { useRouter } from 'next/router';
 import Image from "next/image";
 import { RouteContext } from "../RouteContext";
 import { FaLinkedin, FaGithub, FaEnvelope, FaReceipt, FaAngleDown } from "react-icons/fa";
