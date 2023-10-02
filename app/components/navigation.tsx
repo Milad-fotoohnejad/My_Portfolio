@@ -1,12 +1,18 @@
 "use client";
 import React, { useContext } from "react";
-import Link from "next/link";
+import { useRouter } from 'next/navigation';
 import Image from "next/image";
 import { RouteContext } from "../RouteContext";
 import { FaLinkedin, FaGithub, FaEnvelope, FaReceipt, FaAngleDown } from "react-icons/fa";
 
 const Navigation = () => {
-  const { setCurrentRoute } = useContext(RouteContext);
+    const router = useRouter();
+    const { setCurrentRoute } = useContext(RouteContext);
+  
+    const isActive = (route: string) => {
+      return route === router.pathname;
+    };
+  
   return (
     <div className="navigation">
       <div>
@@ -22,7 +28,7 @@ const Navigation = () => {
       </div>
       <nav>
         <div className="nav font-mono">
-          <button className="nav-link" onClick={() => setCurrentRoute("/")}>
+          <button className={`nav-link ${isActive('/') ? 'active' : ''}`} onClick={() => setCurrentRoute("/")}>
             Home
           </button>
           <div className="dropdown">
@@ -49,7 +55,7 @@ const Navigation = () => {
             </div>
           </div>
           <button
-            className="nav-link"
+            className={`nav-link ${isActive('/pages/contact') ? 'active' : ''}`}
             onClick={() => setCurrentRoute("/pages/contact")}
           >
             Contact Me

@@ -95,20 +95,22 @@ export const Experiences = () => {
           </div>
         ))}
       </div>
-      <div className="text-center text-xs text-gray-400">
-      <p>
-        LottieFiles is by Design Barn Inc. Copyright © 2023 Design Barn Inc. All
-        rights reserved.
-      </p>
-      <p >
-        Beautiful logo used here is made by:{" "}
-        <a
-          href="https://www.flaticon.com/free-icons/role-model"
-          title="role model icons"
-        >
-          Role model icons created by Flat Icons - Flaticon
-        </a>
-      </p>
+      <div className="text-center text-xs text-gray-300">
+        <p>
+          LottieFiles is by Design Barn Inc. Copyright © 2023 Design Barn Inc.
+          All rights reserved.
+        </p>
+        <p>
+          Beautiful logo used here is made by:{" "}
+          <a
+            href="https://www.flaticon.com/free-icons/role-model"
+            title="role model icons"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Role model icons created by Flat Icons - Flaticon
+          </a>
+        </p>
       </div>
     </div>
   );

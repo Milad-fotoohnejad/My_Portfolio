@@ -73,6 +73,11 @@ body {
   align-items: center;
 }
 
+.nav-link.active {
+  color: #48DE80;
+}
+
+
 .nav-link {
   z-index: 10;
   margin: 1em 0;
