@@ -39,7 +39,7 @@ export const Introduction = () => {
       </div>
       <div className="">
         <Image
-          src="/profile2-rmbg2.png"
+          src="/profile1.png"
           width={256}
           height={256}
           alt="Nothing"
