@@ -1,17 +1,26 @@
 "use client";
 import React, { useContext } from "react";
-import { useRouter } from 'next/router';
+import { useRouter } from 'next/navigation';
 import Image from "next/image";
 import { RouteContext } from "../RouteContext";
 import { FaLinkedin, FaGithub, FaEnvelope, FaReceipt, FaAngleDown } from "react-icons/fa";
 
 const Navigation = () => {
-    const router = useRouter();
-    const { setCurrentRoute } = useContext(RouteContext);
+    const { currentRoute, setCurrentRoute } = useContext(RouteContext);
+
   
-    const isActive = (route: string) => {
-      return route === router.pathname;
+    const isActive = (routes: string | string[]) => {
+      if (Array.isArray(routes)) {
+        return routes.includes(currentRoute);
+      }
+      return routes === currentRoute;
     };
+    
+    const isProjectActive = [
+      "/pages/cm_project",
+      "/pages/viu_project",
+      "/pages/wc_project",
+    ].includes(currentRoute);
   
   return (
     <div className="navigation">
@@ -28,34 +37,47 @@ const Navigation = () => {
       </div>
       <nav>
         <div className="nav font-mono">
-          <button className={`nav-link ${isActive('/') ? 'active' : ''}`} onClick={() => setCurrentRoute("/")}>
+          <button
+            className={`nav-link ${isActive("/") ? "active" : ""}`}
+            onClick={() => setCurrentRoute("/")}
+          >
             Home
           </button>
           <div className="dropdown">
-            <button className="dropbtn">Projects</button>
+            <button className={`dropbtn ${isProjectActive ? "active" : ""}`}>
+              Projects
+            </button>
+
             <div className="dropdown-content">
               <button
                 className="nav-link"
-                onClick={() => setCurrentRoute("/pages/cm_project")}
+                onClick={() => {
+                  setCurrentRoute("/pages/cm_project");
+                }}
               >
                 Classic Mafia Game
               </button>
+
               <button
                 className="nav-link"
-                onClick={() => setCurrentRoute("/pages/viu_project")}
+                onClick={() => {
+                  setCurrentRoute("/pages/viu_project");
+                }}
               >
                 VIU Culinary App
               </button>
               <button
                 className="nav-link"
-                onClick={() => setCurrentRoute("/pages/wc_project")}
+                onClick={() => {
+                  setCurrentRoute("/pages/wc_project");
+                }}
               >
                 WhichCam Web WordPress
               </button>
             </div>
           </div>
           <button
-            className={`nav-link ${isActive('/pages/contact') ? 'active' : ''}`}
+            className={`nav-link ${isActive("/pages/contact") ? "active" : ""}`}
             onClick={() => setCurrentRoute("/pages/contact")}
           >
             Contact Me
@@ -108,11 +130,11 @@ const Navigation = () => {
         </footer>
       </div>
       <div className="scroll-down flex flex-col text-4xl items-center">
-      <p className="mb-3 text-3xl">Scroll Down</p>
-      <div className="animate-bounce">
-        <FaAngleDown />
+        <p className="mb-3 text-3xl">Scroll Down</p>
+        <div className="animate-bounce">
+          <FaAngleDown />
+        </div>
       </div>
-    </div>
     </div>
   );
 };

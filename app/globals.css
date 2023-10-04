@@ -26,6 +26,35 @@ body {
   background-color: #3c415edf;
 }
 
+
+.circle-frame {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 320px;
+  height: 320px;
+  position: relative; /* Added for positioning */
+  border: #69850f;
+  border-style:ridge;
+  border-width: 5px;
+  box-shadow: 0px 10px 50px 10px #97e2fba9;
+  margin-bottom: -10%; /* Horizontal offset, vertical offset, blur radius, color */
+}
+
+.adjusted-image {
+  object-fit: cover; /* This will make sure the image covers the container fully without stretching */
+  object-position: center top; /* Adjusts the position of the image. In this case, it moves the image down */
+  width: 155%; /* Ensure it covers the full width of the parent */
+  height: 155%; /* Ensure it covers the full height of the parent */
+}
+
+/* .p1{
+  width: fit-content;
+} */
+
+.p2{
+  width: fit-content;
+}
+
 /******************* page.tsx ********************/
 .grid-container {
   display: grid;
@@ -40,7 +69,7 @@ body {
   z-index: 10;
   grid-area: nav;
   background-color: #3c415edf;
-  padding: 1em;
+  padding: 0.8em;
   display: grid;
   grid-template-rows: auto auto auto;
   justify-items: center;
@@ -98,6 +127,10 @@ body {
   cursor: pointer;
   width: 100%;
   font-size: larger;
+}
+
+.dropbtn.active {
+  color: #48DE80;
 }
 
 .nav-link:hover {

@@ -24,7 +24,7 @@ export const Introduction = () => {
 
   return (
     <div className="intro op-back p-4 mb-5 text-white text-justify rounded-md font-sans">
-      <div>
+      <div className="mt-5 mx-5">
         <h1 className="text-6xl font-bold m-5 text-green-400 font-mono">
           Hi, I&apos;m Milad
         </h1>
@@ -37,13 +37,13 @@ export const Introduction = () => {
           make a positive impact on peoples lives.
         </p>
       </div>
-      <div className="">
+      <div className="circle-frame mt-5">
         <Image
-          src="/profile1.png"
-          width={256}
-          height={256}
+          src="/profile1-cent.png"
+          width={320}
+          height={320}
           alt="Nothing"
-          className="rounded-full"
+          className="adjusted-image"
         />
       </div>
       <div>
