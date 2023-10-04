@@ -39,7 +39,7 @@ export const Introduction = () => {
       </div>
       <div className="circle-frame mt-5">
         <Image
-          src="/profile1-cent.png"
+          src="/profile.png"
           width={320}
           height={320}
           alt="Nothing"

@@ -33,10 +33,10 @@ body {
   width: 320px;
   height: 320px;
   position: relative; /* Added for positioning */
-  border: #69850f;
+  border: #53690c;
   border-style:ridge;
   border-width: 5px;
-  box-shadow: 0px 10px 50px 10px #97e2fba9;
+  box-shadow: 0px 10px 50px 10px #b4ebfea9;
   margin-bottom: -10%; /* Horizontal offset, vertical offset, blur radius, color */
 }
 
