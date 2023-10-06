@@ -112,7 +112,7 @@ export default function VbProject() {
             <p className="mb-6 text-lg">
               The core of WhichCam&apos;s responsive design is sculpted using
               Bootstrap, a potent framework that fosters rapid, mobile-first
-              front-end web development. The website's navigation bar, though
+              front-end web development. The website&apos;s navigation bar, though
               inspired by a Bootstrap template, underwent extensive
               customization to integrate features like dropdown product lists
               and brand-aligned logos. A captivating carousel adorns the
