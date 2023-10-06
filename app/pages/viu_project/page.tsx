@@ -2,15 +2,8 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import {
-  FaJava,
-  FaReact,
-  FaNodeJs,
   FaDatabase,
   FaGithub,
-  FaJs,
-  FaGitlab,
-  FaCss3,
-  FaMobile,
   FaFileExcel,
   FaAndroid,
   FaApple,
@@ -49,13 +42,7 @@ export default function VbProject() {
           </h1>
 
           <section className="mb-5">
-            <div className="relative h-96 md:h-128">
-              <button
-                className="absolute z-10 left-40 mt-48 md:mt-64 p-2 rounded-full bg-green-400 text-gray-800"
-                onClick={prevSlide}
-              >
-                <FontAwesomeIcon icon={faChevronLeft} />
-              </button>
+            <div className="relative h-[400px] md:h-[500px]">
               {imgList.map((img, index) => (
                 <div
                   key={index}
@@ -67,18 +54,12 @@ export default function VbProject() {
                 >
                   <Image
                     src={img}
-                    alt="Game image"
+                    alt="Project image"
                     layout="fill"
                     objectFit="contain"
                   />
                 </div>
               ))}
-              <button
-                className="absolute z-10 right-40 mt-48 md:mt-64 p-2 rounded-full bg-green-400 text-gray-800"
-                onClick={nextSlide}
-              >
-                <FontAwesomeIcon icon={faChevronRight} />
-              </button>
               <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 flex space-x-2 mt-4">
                 {imgList.map((_, index) => (
                   <div
@@ -90,18 +71,33 @@ export default function VbProject() {
                 ))}
               </div>
             </div>
+            <div className="flex justify-center space-x-2 m-3">
+              <button
+                className="p-2 rounded-full bg-green-400 text-gray-800"
+                onClick={prevSlide}
+              >
+                <FontAwesomeIcon icon={faChevronLeft} />
+              </button>
+              <button
+                className="p-2 rounded-full bg-green-400 text-gray-800"
+                onClick={nextSlide}
+              >
+                <FontAwesomeIcon icon={faChevronRight} />
+              </button>
+            </div>
           </section>
 
           <section className="op-back rounded-md p-3">
             <h2 className="font-mono text-2xl mb-4">Introduction</h2>
             <p className="mb-6 text-lg">
-              The VIU Culinary project showcases a cutting-edge culinary web and
-              mobile application developed for the VIU Culinary Department based
-              in Nanaimo, BC. Born out of the need for an efficient and dynamic
-              recipe management system, the project not only streamlines the
-              curation and access of recipes but also offers an interactive
-              platform tailored to the needs of modern culinary professionals
-              and enthusiasts alike.
+              The VIU Culinary project, which I undertook as my practicum,
+              showcases a cutting-edge culinary web and mobile application
+              developed for the VIU Culinary Department based in Nanaimo, BC.
+              Born out of the need for an efficient and dynamic recipe
+              management system, the project not only streamlines the curation
+              and access of recipes but also offers an interactive platform
+              tailored to the needs of modern culinary professionals and
+              enthusiasts alike.
             </p>
             <h2 className="font-mono text-2xl mb-4">Tech Stack</h2>
             <p className="mb-6 text-lg">
@@ -112,14 +108,13 @@ export default function VbProject() {
               Database, which not only stores the dynamic recipe booklet but
               also houses images of the products, laying the groundwork for a
               future gallery that will chronicle the process of making the
-              recipes. <br/>
-              A noteworthy feature is the Firebase Authentication,
-              tailored to identify and differentiate user roles between
-              instructors and students, ensuring that each group accesses
-              content pertinent to their requirements. Moreover, a custom parser
-              was developed in Flutter to effortlessly convert traditional Excel
-              recipe spreadsheets into a versatile JSON array format,
-              streamlining the recipe input and management process.
+              recipes. <br />A noteworthy feature is the Firebase
+              Authentication, tailored to identify and differentiate user roles
+              between instructors and students, ensuring that each group
+              accesses content pertinent to their requirements. Moreover, a
+              custom parser was developed in Flutter to effortlessly convert
+              traditional Excel recipe spreadsheets into a versatile JSON array
+              format, streamlining the recipe input and management process.
             </p>
             <section>
               <div className="flex justify-center text-green-400 space-x-4">

@@ -72,7 +72,7 @@ const Navigation = () => {
                   setCurrentRoute("/pages/wc_project");
                 }}
               >
-                WhichCam Web WordPress
+                WhichCam Web
               </button>
             </div>
           </div>

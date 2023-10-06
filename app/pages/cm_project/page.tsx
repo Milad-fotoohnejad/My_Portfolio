@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import {
-  FaJava,
   FaReact,
   FaNodeJs,
   FaDatabase,
@@ -47,13 +46,7 @@ export default function CmProject() {
           <h1 className="font-mono text-4xl mb-6">Classic Mafia Game</h1>
 
           <section className="mb-5">
-            <div className="relative h-96 md:h-128">
-              <button
-                className="absolute z-10 left-40 mt-48 md:mt-64 p-2 rounded-full bg-green-400 text-gray-800"
-                onClick={prevSlide}
-              >
-                <FontAwesomeIcon icon={faChevronLeft} />
-              </button>
+            <div className="relative h-[400px] md:h-[500px]">
               {imgList.map((img, index) => (
                 <div
                   key={index}
@@ -65,18 +58,12 @@ export default function CmProject() {
                 >
                   <Image
                     src={img}
-                    alt="Game image"
+                    alt="Project image"
                     layout="fill"
                     objectFit="contain"
                   />
                 </div>
               ))}
-              <button
-                className="absolute z-10 right-40 mt-48 md:mt-64 p-2 rounded-full bg-green-400 text-gray-800"
-                onClick={nextSlide}
-              >
-                <FontAwesomeIcon icon={faChevronRight} />
-              </button>
               <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 flex space-x-2 mt-4">
                 {imgList.map((_, index) => (
                   <div
@@ -87,6 +74,20 @@ export default function CmProject() {
                   ></div>
                 ))}
               </div>
+            </div>
+            <div className="flex justify-center space-x-2 m-3">
+              <button
+                className="p-2 rounded-full bg-green-400 text-gray-800"
+                onClick={prevSlide}
+              >
+                <FontAwesomeIcon icon={faChevronLeft} />
+              </button>
+              <button
+                className="p-2 rounded-full bg-green-400 text-gray-800"
+                onClick={nextSlide}
+              >
+                <FontAwesomeIcon icon={faChevronRight} />
+              </button>
             </div>
           </section>
 
