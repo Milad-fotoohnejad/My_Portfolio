@@ -1,3 +1,4 @@
+"use client";
 import React, { useState } from 'react';
 import Image from 'next/image';
 import { FaJava, FaReact, FaNodeJs, FaDatabase, FaGithub } from 'react-icons/fa';
