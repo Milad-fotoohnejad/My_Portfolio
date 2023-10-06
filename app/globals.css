@@ -206,6 +206,11 @@ body {
   color: #48DE80;
 }
 
+.web:hover {
+  background-color: rgb(175, 240, 255);
+  color: #48DE80;
+}
+
 /************************** Footer **************************/
 
 .footer {

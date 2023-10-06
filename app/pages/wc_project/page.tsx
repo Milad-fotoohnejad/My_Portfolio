@@ -75,13 +75,13 @@ export default function VbProject() {
             </div>
             <div className="flex justify-center space-x-2 m-3">
               <button
-                className="p-2 rounded-full bg-green-400 text-gray-800"
+                className="web p-2 rounded-full bg-green-400 text-gray-800"
                 onClick={prevSlide}
               >
                 <FontAwesomeIcon icon={faChevronLeft} />
               </button>
               <button
-                className="p-2 rounded-full bg-green-400 text-gray-800"
+                className="web p-2 rounded-full bg-green-400 text-gray-800"
                 onClick={nextSlide}
               >
                 <FontAwesomeIcon icon={faChevronRight} />
@@ -90,10 +90,10 @@ export default function VbProject() {
           </section>
 
           <section className="op-back rounded-md p-3">
-            <button>
-            <a href="https://milad-fotoohnejad.github.io/WhichCam_Web/index.html" className="text-green-400"> WhichCam</a>
-            </button>
             <h2 className="font-mono text-2xl mb-4">Introduction</h2>
+            <button className="web flex text-gray-800 bg-blue-200 rounded-md p-2 mb-2 justify-center text-lg">
+            <a href="https://milad-fotoohnejad.github.io/WhichCam_Web/index.html" > Visit Website</a>
+            </button>
             <p className="mb-6 text-lg">
               Introducing WhichCam, the definitive platform for camera
               enthusiasts and novices alike looking to make an informed camera
@@ -133,7 +133,7 @@ export default function VbProject() {
                 <FaBootstrap className="text-5xl" />
                 <FaJs className="text-5xl" />
                 <a
-                  href="https://github.com/Milad-fotoohnejad/VIU_BakeryProject"
+                  href="https://github.com/Milad-fotoohnejad/WhichCam_Web"
                   className="text-white animate-blink"
                   target="_blank"
                   rel="noopener noreferrer"

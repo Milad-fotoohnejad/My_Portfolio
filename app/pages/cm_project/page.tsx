@@ -77,13 +77,13 @@ export default function CmProject() {
             </div>
             <div className="flex justify-center space-x-2 m-3">
               <button
-                className="p-2 rounded-full bg-green-400 text-gray-800"
+                className="web p-2 rounded-full bg-green-400 text-gray-800"
                 onClick={prevSlide}
               >
                 <FontAwesomeIcon icon={faChevronLeft} />
               </button>
               <button
-                className="p-2 rounded-full bg-green-400 text-gray-800"
+                className="web p-2 rounded-full bg-green-400 text-gray-800"
                 onClick={nextSlide}
               >
                 <FontAwesomeIcon icon={faChevronRight} />
