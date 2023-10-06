@@ -1,7 +1,6 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import Head from "next/head";
 import {
   FaJava,
   FaReact,
@@ -116,7 +115,7 @@ export default function CmProject() {
               back-end development. On the front-end, React.js would be used to
               build the user interface and handle the user interactions. For the
               front-end UI design I used HTML5, CSS3 and Tailwind. On the
-              back-end, Node.js, which is a JavaScript runtime built on Chrome's
+              back-end, Node.js, which is a JavaScript runtime built on Chrome&apos;s
               V8 JavaScript engine, could be used as the back-end framework. For
               the database, Firebase, which is a NoSQL database could be used to
               store the game information and user information. To handle the
