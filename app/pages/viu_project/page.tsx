@@ -1,13 +1,19 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import Head from "next/head";
 import {
   FaJava,
   FaReact,
   FaNodeJs,
   FaDatabase,
   FaGithub,
+  FaJs,
+  FaGitlab,
+  FaCss3,
+  FaMobile,
+  FaFileExcel,
+  FaAndroid,
+  FaApple,
 } from "react-icons/fa";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -38,33 +44,14 @@ export default function VbProject() {
     <>
       <div className="op-back rounded-md p-5">
         <div className="text-white">
-          <h1 className="font-mono text-4xl mb-6">Classic Mafia Game</h1>
+          <h1 className="font-mono text-4xl mb-6">
+            VIU Culinary Cross-platform Application
+          </h1>
 
-          <section className="op-back rounded-md p-3">
-            <h2 className="font-mono text-2xl mb-4">Introduction</h2>
-            <p className="mb-6">Description about the project goes here.</p>
-            <p className="mb-6">
-              Associated with Vancouver Island University. I have developed a
-              web application for the popular social deduction game, Classic
-              Mafia for my capstone project. This real-time multiplayer game
-              provides an engaging gameplay experience, offering players the
-              opportunity to interact in real-time to reveal the hidden Mafia
-              members among them.
-            </p>
-            <p className="mb-6">
-              My tech stack for this project comprises Firebase, ExpressJS,
-              ReactJS, and NodeJS, a potent combination for creating a
-              real-time, highly interactive game. I&apos;m utilizing JavaScript
-              (ReactJS) as the primary programming language to ensure optimal
-              performance and wide compatibility.
-            </p>
-          </section>
-
-          <section>
-            <h2 className="font-mono text-2xl mb-4">Project Pictures</h2>
+          <section className="mb-5">
             <div className="relative h-96 md:h-128">
               <button
-                className="absolute z-10 left-0 mt-48 md:mt-64 p-2 rounded-full bg-gray-600 text-white"
+                className="absolute z-10 left-40 mt-48 md:mt-64 p-2 rounded-full bg-green-400 text-gray-800"
                 onClick={prevSlide}
               >
                 <FontAwesomeIcon icon={faChevronLeft} />
@@ -87,7 +74,7 @@ export default function VbProject() {
                 </div>
               ))}
               <button
-                className="absolute z-10 right-0 mt-48 md:mt-64 p-2 rounded-full bg-gray-600 text-white"
+                className="absolute z-10 right-40 mt-48 md:mt-64 p-2 rounded-full bg-green-400 text-gray-800"
                 onClick={nextSlide}
               >
                 <FontAwesomeIcon icon={faChevronRight} />
@@ -105,27 +92,51 @@ export default function VbProject() {
             </div>
           </section>
 
-          <section>
+          <section className="op-back rounded-md p-3">
+            <h2 className="font-mono text-2xl mb-4">Introduction</h2>
+            <p className="mb-6 text-lg">
+              The VIU Culinary project showcases a cutting-edge culinary web and
+              mobile application developed for the VIU Culinary Department based
+              in Nanaimo, BC. Born out of the need for an efficient and dynamic
+              recipe management system, the project not only streamlines the
+              curation and access of recipes but also offers an interactive
+              platform tailored to the needs of modern culinary professionals
+              and enthusiasts alike.
+            </p>
             <h2 className="font-mono text-2xl mb-4">Tech Stack</h2>
-            <div className="flex space-x-4">
-              <FaJava className="text-3xl" />
-              <FaReact className="text-3xl" />
-              <FaNodeJs className="text-3xl" />
-              <FaDatabase className="text-3xl" />
-            </div>
-          </section>
-
-          <section>
-            <h2 className="font-mono text-2xl mb-4">GitHub Repository</h2>
-            <a
-              href="https://github.com/Milad-fotoohnejad/ClassicMafia"
-              className="text-blue-500"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaGithub className="text-3xl" />
-              <span className="ml-2">View on GitHub</span>
-            </a>
+            <p className="mb-6 text-lg">
+              The backbone of this innovative project lies in its robust tech
+              stack. The application is built using Flutter, ensuring a seamless
+              cross-platform experience for both web and mobile users on Android
+              and iOS. The data architecture is anchored by the Firebase
+              Database, which not only stores the dynamic recipe booklet but
+              also houses images of the products, laying the groundwork for a
+              future gallery that will chronicle the process of making the
+              recipes. <br/>
+              A noteworthy feature is the Firebase Authentication,
+              tailored to identify and differentiate user roles between
+              instructors and students, ensuring that each group accesses
+              content pertinent to their requirements. Moreover, a custom parser
+              was developed in Flutter to effortlessly convert traditional Excel
+              recipe spreadsheets into a versatile JSON array format,
+              streamlining the recipe input and management process.
+            </p>
+            <section>
+              <div className="flex justify-center text-green-400 space-x-4">
+                <FaApple className="text-5xl" />
+                <FaFileExcel className="text-5xl" />
+                <a
+                  href="https://github.com/Milad-fotoohnejad/VIU_BakeryProject"
+                  className="text-white animate-blink"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaGithub className="text-5xl" />
+                </a>
+                <FaDatabase className="text-5xl" />
+                <FaAndroid className="text-5xl" />
+              </div>
+            </section>
           </section>
         </div>
       </div>

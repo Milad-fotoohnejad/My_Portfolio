@@ -49,7 +49,7 @@ export default function CmProject() {
           <section className="mb-5">
             <div className="relative h-96 md:h-128">
               <button
-                className="absolute z-10 left-0 mt-48 md:mt-64 p-2 rounded-full bg-gray-600 text-white"
+                className="absolute z-10 left-40 mt-48 md:mt-64 p-2 rounded-full bg-green-400 text-gray-800"
                 onClick={prevSlide}
               >
                 <FontAwesomeIcon icon={faChevronLeft} />
@@ -72,7 +72,7 @@ export default function CmProject() {
                 </div>
               ))}
               <button
-                className="absolute z-10 right-0 mt-48 md:mt-64 p-2 rounded-full bg-gray-600 text-white"
+                className="absolute z-10 right-40 mt-48 md:mt-64 p-2 rounded-full bg-green-400 text-gray-800"
                 onClick={nextSlide}
               >
                 <FontAwesomeIcon icon={faChevronRight} />
@@ -92,7 +92,7 @@ export default function CmProject() {
 
           <section className="op-back rounded-md p-3">
             <h2 className="font-mono text-2xl mb-4">Introduction</h2>
-            <p className="mb-6">
+            <p className="mb-6 text-lg">
               In the Mafia game website, Lord, who is the narrator of the
               instructions of the game, is going to be played online. The
               purpose of the website is to let people to skip the role of the
@@ -100,7 +100,7 @@ export default function CmProject() {
               the Lord role, give the instruction, distribute the roles randomly
               to people, and take their decisions on the game flow.
             </p>
-            <p className="mb-6">
+            <p className="mb-6 text-lg">
               Associated with Vancouver Island University. I have developed a
               web application for the popular social deduction game, Classic
               Mafia for my capstone project. This real-time multiplayer game
@@ -108,8 +108,8 @@ export default function CmProject() {
               opportunity to interact in real-time to reveal the hidden Mafia
               members among them.
             </p>
-            <p className="mb-6">
-              <h2 className="font-mono text-2xl mb-4">Tech Stack</h2>
+            <h2 className="font-mono text-2xl mb-4">Tech Stack</h2>
+            <p className="mb-6 text-lg">
               Technologies used for this project includes React.js for this
               website and typically using JavaScript for both the front-end and
               back-end development. On the front-end, React.js would be used to
