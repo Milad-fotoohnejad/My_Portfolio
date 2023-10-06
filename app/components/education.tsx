@@ -52,7 +52,7 @@ export const Education = () => {
           </div>
           <div className="mt-5">
             <p className="text-gray-200">
-              Here I studied a two year full time Diploma program at VIU.
+              Here I studied a two year full-time Diploma program at VIU.
             </p>
           </div>
         </div>
@@ -77,7 +77,7 @@ export const Education = () => {
           </div>
           <div className="mt-5">
             <p className="text-gray-200">
-              Here I studied a four year full time Diploma program at IAU.
+              Here I studied a four year part-time Diploma program at IAU.
             </p>
           </div>
         </div>

@@ -40,7 +40,7 @@ export default function VbProject() {
       <div className="op-back rounded-md p-5">
         <div className="text-white">
           <h1 className="font-mono text-4xl mb-6">
-            VIU Culinary Cross-platform Application
+            WhichCam Website 
           </h1>
 
           <section className="mb-5">
