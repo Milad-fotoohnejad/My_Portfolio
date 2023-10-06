@@ -95,7 +95,7 @@ export default function VbProject() {
             </button>
             <h2 className="font-mono text-2xl mb-4">Introduction</h2>
             <p className="mb-6 text-lg">
-              Introducing "WhichCam", the definitive platform for camera
+              Introducing WhichCam, the definitive platform for camera
               enthusiasts and novices alike looking to make an informed camera
               purchase decision. With the digital world teeming with countless
               camera options, WhichCam endeavors to simplify the selection
