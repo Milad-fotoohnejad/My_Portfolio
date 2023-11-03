@@ -11,6 +11,7 @@ body {
     linear-gradient(30deg, #071e3d 75%, transparent 75%);
   background-position: 0 0, 20px 20px, 20px 20px, 0 0;
   animation: moveBackground 10s linear infinite;
+
 }
 
 @keyframes moveBackground {
@@ -98,6 +99,8 @@ body {
 }
 /************************ Navigation **************************/
 .nav {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: larger;
   margin-top: 10%;
   z-index: 10;
   display: flex;
@@ -218,6 +221,7 @@ body {
 /************************** Footer **************************/
 
 .footer {
+  font-family: 'Courier New', Courier, monospace;
   z-index: 2;
   grid-area: footer;
   padding: 0.3em;
