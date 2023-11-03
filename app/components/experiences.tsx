@@ -109,6 +109,8 @@ export const Experiences = () => {
             rel="noopener noreferrer"
           >
             Role model icons created by Flat Icons - Flaticon
+          <br />
+            copyright © Fonticons, Inc. All rights reserved
           </a>
         </p>
       </div>
