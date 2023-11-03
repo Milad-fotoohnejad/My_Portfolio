@@ -120,8 +120,7 @@ export default function CmProject() {
               V8 JavaScript engine, could be used as the back-end framework. For
               the database, Firebase, which is a NoSQL database could be used to
               store the game information and user information. To handle the
-              communication between the front-end and back-end, a library like
-              Axios could be used to make HTTP requests to the back-end API.
+              communication between the front-end and back-end, Socket.io is used to make HTTP requests to the back-end API.
               Additionally, libraries like express could be used to handle the
               state management and routing respectively. This stack is commonly
               referred to as FERN stack (FireBase, Express.js, React.js,
