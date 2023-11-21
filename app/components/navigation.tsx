@@ -27,10 +27,10 @@ const Navigation = () => {
       <div>
         <a href="/">
           <Image
-            src="/logo-green2.png"
+            src="/LOGO_M.png"
             alt="LOGO"
-            width={150}
-            height={150}
+            width={200}
+            height={200}
             className="profile-img"
           />
         </a>
