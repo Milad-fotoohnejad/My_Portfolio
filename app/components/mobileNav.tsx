@@ -24,7 +24,7 @@ const MobileNav = () => {
         <div className="mobile-nav">
             <div className="branding">
                 <Link href="/" passHref>
-                    <Image src="/LOGO_M.png" alt="Logo" width={40} height={40} />
+                    <Image src="/LOGO_M.png" alt="Logo" width={60} height={60} />
                 </Link>
             </div>
 
