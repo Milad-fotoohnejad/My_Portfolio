@@ -384,7 +384,7 @@ intro-img1{
   /* Ensure the content area now takes up the full width */
   .content {
     grid-area: content;
-    margin-top: 12%;
+    margin-top: 17%;
     width: 100%; /* Adjust if necessary to ensure it takes full width */
     /* Other styling for content */
   }
