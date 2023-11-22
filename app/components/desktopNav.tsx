@@ -129,12 +129,6 @@ const Navigation = () => {
           </div>
         </footer>
       </div>
-      <div className="scroll-down flex flex-col text-4xl items-center">
-        <p className="mb-3 text-3xl">Scroll Down</p>
-        <div className="animate-bounce">
-          <FaAngleDown />
-        </div>
-      </div>
     </div>
   );
 };
