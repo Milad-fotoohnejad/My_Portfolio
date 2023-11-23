@@ -15,8 +15,13 @@ body {
 }
 
 @keyframes moveBackground {
-  from { background-position: 0 0, 20px 20px, 20px 20px, 0 0; }
-  to { background-position: 40px 40px, 60px 60px, 60px 60px, 40px 40px; }
+  from {
+    background-position: 0 0, 20px 20px, 20px 20px, 0 0;
+  }
+
+  to {
+    background-position: 40px 40px, 60px 60px, 60px 60px, 40px 40px;
+  }
 }
 
 .op-back {
@@ -24,9 +29,12 @@ body {
 }
 
 @keyframes blink {
-  0%, 100% {
+
+  0%,
+  100% {
     opacity: 1;
   }
+
   50% {
     opacity: 0;
   }
@@ -38,26 +46,32 @@ body {
   overflow: hidden;
   width: 320px;
   height: 320px;
-  position: relative; /* Added for positioning */
+  position: relative;
+  /* Added for positioning */
   border: #53690c;
-  border-style:ridge;
+  border-style: ridge;
   border-width: 5px;
   box-shadow: 0px 10px 50px 10px #b4ebfea9;
-  margin-bottom: -10%; /* Horizontal offset, vertical offset, blur radius, color */
+  margin-bottom: -10%;
+  /* Horizontal offset, vertical offset, blur radius, color */
 }
 
 .adjusted-image {
-  object-fit: cover; /* This will make sure the image covers the container fully without stretching */
-  object-position: center top; /* Adjusts the position of the image. In this case, it moves the image down */
-  width: 155%; /* Ensure it covers the full width of the parent */
-  height: 155%; /* Ensure it covers the full height of the parent */
+  object-fit: cover;
+  /* This will make sure the image covers the container fully without stretching */
+  object-position: center top;
+  /* Adjusts the position of the image. In this case, it moves the image down */
+  width: 155%;
+  /* Ensure it covers the full width of the parent */
+  height: 155%;
+  /* Ensure it covers the full height of the parent */
 }
 
 /* .p1{
   width: fit-content;
 } */
 
-.p2{
+.p2 {
   width: fit-content;
 }
 
@@ -88,8 +102,8 @@ body {
 .content {
   grid-area: content;
   padding: 1em;
-  overflow-y: auto; 
-  height: 100vh;  
+  overflow-y: auto;
+  height: 100vh;
 }
 
 .profile-img {
@@ -97,6 +111,7 @@ body {
   margin-top: 20%;
   align-items: center;
 }
+
 /************************ Navigation **************************/
 .nav {
   font-family: 'Courier New', Courier, monospace;
@@ -178,8 +193,10 @@ body {
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   padding: 12px 16px;
   z-index: 1;
-  left: 130%;   /* Move it a bit more to the right */
-  top: -170px;    /* Move it a bit more to the top */
+  left: 130%;
+  /* Move it a bit more to the right */
+  top: -170px;
+  /* Move it a bit more to the top */
   transition: 0.5s ease-out;
   background-color: #738598dc;
   border-radius: 15px;
@@ -214,7 +231,7 @@ body {
   color: #48DE80;
 }
 
-.logo:hover{
+.logo:hover {
   color: #48DE80;
 }
 
@@ -287,13 +304,13 @@ body {
   grid-column: 2;
 }
 
-intro-img1{
+intro-img1 {
   width: 50%;
   height: 50%;
 }
 
 
-.intro-img2{
+.intro-img2 {
   width: 50%;
   height: 50%;
 }
@@ -309,7 +326,7 @@ intro-img1{
   height: 100vh;
 }
 
-.title{
+.title {
   margin-bottom: -10%;
 }
 
@@ -327,7 +344,8 @@ intro-img1{
   justify-items: center;
 }
 
-#contactForm input, #contactForm textarea {
+#contactForm input,
+#contactForm textarea {
   padding: 10px;
   border: 2px solid #48DE80;
   justify-items: center;
@@ -363,53 +381,52 @@ intro-img1{
 
 @media (max-width: 768px) {
   .grid-container {
-    grid-template-columns: 1fr; /* Use one column that takes full width */
-    grid-template-areas: 
+    grid-template-columns: 1fr;
+    grid-template-areas:
       "nav"
       "content"
       "footer";
   }
 
-  /* Other mobile-specific styles... */
-
   .navigation {
-    display: none; /* Hide the desktop navigation on mobile */
+    display: none;
+    /* Hide the desktop navigation on mobile */
   }
 
   .mobile-nav {
-    display: flex; /* Display the mobile navigation bar */
-    /* More styles for positioning and appearance */
+    display: flex;
   }
 
-  /* Ensure the content area now takes up the full width */
+
   .content {
     grid-area: content;
-    margin-top: 17%;
-    width: 100%; /* Adjust if necessary to ensure it takes full width */
-    /* Other styling for content */
+    margin-top: 2%;
+    width: 100%;
   }
+
   .mobile-nav {
-    position: fixed; /* Fixes the navigation at the top */
+    position: fixed;
+    /* Stay at the top */
     top: 0;
     left: 0;
     right: 0;
-    display: flex; /* Aligns items in a row */
-    justify-content: space-between; /* Positions the logo and menu button on opposite ends */
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    padding: 0.5rem 1rem; /* Adjust padding as needed */
-    background-color: #3c415edf; /* Match your branding color */
-    z-index: 1000; /* Ensures the nav is above other content */
+    padding: 0.5rem 1rem;
+    background-color: #3c415edf;
+    z-index: 1000;
   }
 
   .branding {
     /* Aligns the logo to the left */
     display: flex;
     align-items: center;
-    margin-right: auto; /* Pushes everything else to the right */
+    margin-right: auto;
+    /* Pushes everything else to the right */
   }
 
   .menu-button {
-    /* Aligns the menu button to the right */
     background: none;
     border: none;
     color: white;
@@ -420,28 +437,78 @@ intro-img1{
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 100%; /* Below the nav bar */
+    top: 100%;
+    /* Below the nav bar */
     left: 0;
     right: 0;
-    background-color: #3c415edf; /* Adjust to match your branding */
+    background-color: #3c415edf;
+    /* Adjust to match your branding */
     color: #48DE80;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease; /* For smooth opening/closing */
-    transform: translateY(-100%); /* Hide off-screen initially */
+    transition: transform 0.3s ease;
+    /* For smooth opening/closing */
+    transform: translateY(-100%);
+    /* Hide off-screen initially */
   }
 
   .menu.open {
-    transform: translateY(0); /* Show menu */
+    transform: translateY(0);
+    /* Show menu */
   }
 
   .menu ul {
     list-style: none;
-    width: 100%; /* Full width */
+    width: 100%;
     padding: 0;
   }
 
   .menu li {
-    padding: 1rem; /* Adjust as needed */
-    border-bottom: 1px solid #48DE80; /* Adjust as needed */
+    padding: 1rem;
+    border-bottom: 1px solid #48DE80;
+  }
+
+
+  .intro {
+    display: block;
+    margin-top: 20%;
+    padding: 1rem;
+  }
+
+  .intro>div {
+    margin-bottom: 1rem;
+  }
+
+  .adjusted-image {
+    object-fit: cover;
+    object-position: center top;
+    width: 100%;
+    height: 100%;
+  }
+
+  .circle-frame {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 60%;
+    height: 60%;
+    position: relative;
+    border: #53690c;
+    border-style: ridge;
+    border-width: 5px;
+    box-shadow: 0px 10px 50px 10px #b4ebfea9;
+    margin-bottom: -10%;
+    margin-left: 20%;
+  }
+  .intro h1,
+  .intro h2,
+  .intro h3 {
+    font-size: 1.5rem;
+  }
+
+  .intro p {
+    font-size: 1rem;
+  }
+
+  .mobile-v h1 {
+    font-size: 2rem;
   }
 }

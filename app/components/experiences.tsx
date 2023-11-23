@@ -51,7 +51,7 @@ export const Experiences = () => {
   ];
 
   return (
-    <div className="flex flex-col items-center op-back p-5 rounded-md">
+    <div className="mobile-v flex flex-col items-center op-back p-5 rounded-md">
       <h1 className="text-6xl font-bold m-5 text-green-400 w-full text-center font-mono">
         I experienced...
       </h1>
