@@ -380,13 +380,12 @@ intro-img1 {
 /* ********************* Mobile View *********************** */
 
 @media (max-width: 768px) {
+  
   .grid-container {
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "nav"
-      "content"
-      "footer";
+    display: block;
+    padding-top: 20%;
   }
+
 
   .navigation {
     display: none;
@@ -399,21 +398,21 @@ intro-img1 {
 
 
   .content {
-    grid-area: content;
-    margin-top: 2%;
     width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+    position: relative; 
+    z-index: 1; 
   }
 
   .mobile-nav {
     position: fixed;
-    /* Stay at the top */
     top: 0;
     left: 0;
     right: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 1.5rem;
     background-color: #3c415edf;
     z-index: 1000;
   }
@@ -429,7 +428,7 @@ intro-img1 {
   .menu-button {
     background: none;
     border: none;
-    color: white;
+    color: rgb(237, 201, 0);
     font-size: 2rem;
   }
 
@@ -443,9 +442,9 @@ intro-img1 {
     right: 0;
     background-color: #3c415edf;
     /* Adjust to match your branding */
-    color: #48DE80;
+    color: rgb(237, 201, 0);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
+    transition: transform 0.5s ease;
     /* For smooth opening/closing */
     transform: translateY(-100%);
     /* Hide off-screen initially */
@@ -470,8 +469,14 @@ intro-img1 {
 
   .intro {
     display: block;
-    margin-top: 20%;
-    padding: 1rem;
+    padding: 0.5rem;
+    text-align: start;
+  }
+
+  .logos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
   }
 
   .intro>div {
@@ -486,17 +491,17 @@ intro-img1 {
   }
 
   .circle-frame {
-    border-radius: 50%;
+    border-radius: 30%;
     overflow: hidden;
-    width: 60%;
-    height: 60%;
+    width: 50%;
+    height: 50%;
     position: relative;
     border: #53690c;
     border-style: ridge;
     border-width: 5px;
-    box-shadow: 0px 10px 50px 10px #b4ebfea9;
+    box-shadow: 0px 5px 20px 5px #b4ebfea9;
     margin-bottom: -10%;
-    margin-left: 20%;
+    margin-left: 25%;
   }
   .intro h1,
   .intro h2,
