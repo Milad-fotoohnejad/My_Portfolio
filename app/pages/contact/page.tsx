@@ -13,6 +13,7 @@ export default function Contact() {
       .then((result) => {
           console.log(result.text);
           alert('Message sent!');
+          e.target.reset();
       }, (error) => {
           console.log(error.text);
           alert('Failed to send the message, please try again.');
