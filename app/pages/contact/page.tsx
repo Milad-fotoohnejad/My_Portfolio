@@ -1,13 +1,28 @@
 import React from "react";
 import "../../globals.css";
+import emailjs from 'emailjs-com';
 import { FaLinkedin, FaGithub, FaEnvelope, FaReceipt } from "react-icons/fa";
 
 export default function Contact() {
+
+  const sendEmail = (e: any) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_qg4tmcu', 'template_gp21tuf', e.target, 'UEHQ09GOPUXOOTQnZ')
+      .then((result) => {
+          console.log(result.text);
+          alert('Message sent!');
+      }, (error) => {
+          console.log(error.text);
+          alert('Failed to send the message, please try again.');
+      });
+  };
+
   return (
     <div className="op-back">
       <div className="formContent font-mono">
         <p className="title text-2xl text-green-400 mt-5">Please share you opinion with me</p>
-        <form id="contactForm">
+        <form id="contactForm" onSubmit={sendEmail}>
           <label htmlFor="name">Name</label>
           <input type="text" id="name" name="name" required />
 
