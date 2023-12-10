@@ -8,13 +8,6 @@ export default function HomePage() {
   return (
       <div>
         <main>
-          {/* <Image
-            src="/back.jpg"
-            className="Image"
-            layout="fill"
-            alt="this is my image"
-          />
-          ; */}
           <Introduction />
           <Education />
           <Experiences />

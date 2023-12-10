@@ -81,7 +81,7 @@ export const Introduction = () => {
         </div>
       </div>
       <section>
-        <div className="logos flex op-back mt-1 mb-1 justify-center space-x-14 text-white">
+        <div className="logos flex op-back mt-1 mb-1 justify-center text-white">
           <FaJs className="text-5xl logo" />
           <FaReact className="text-5xl logo" />
           <FaNodeJs className="text-5xl logo" />

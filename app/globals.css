@@ -47,29 +47,19 @@ body {
   width: 320px;
   height: 320px;
   position: relative;
-  /* Added for positioning */
   border: #53690c;
   border-style: ridge;
   border-width: 5px;
   box-shadow: 0px 10px 50px 10px #b4ebfea9;
   margin-bottom: -10%;
-  /* Horizontal offset, vertical offset, blur radius, color */
 }
 
 .adjusted-image {
   object-fit: cover;
-  /* This will make sure the image covers the container fully without stretching */
   object-position: center top;
-  /* Adjusts the position of the image. In this case, it moves the image down */
   width: 155%;
-  /* Ensure it covers the full width of the parent */
   height: 155%;
-  /* Ensure it covers the full height of the parent */
 }
-
-/* .p1{
-  width: fit-content;
-} */
 
 .p2 {
   width: fit-content;
@@ -194,9 +184,7 @@ body {
   padding: 12px 16px;
   z-index: 1;
   left: 130%;
-  /* Move it a bit more to the right */
   top: -170px;
-  /* Move it a bit more to the top */
   transition: 0.5s ease-out;
   background-color: #738598dc;
   border-radius: 15px;
@@ -262,13 +250,11 @@ body {
   margin-top: 2rem;
   color: #ffffff;
   font-size: 1.8rem;
-  /* Adjust the icon size here */
   transition: color 0.2s;
 }
 
 .footer-icon:hover {
   color: #48DE80;
-  /* Change the hover color to match your theme */
 }
 
 .copyright {
@@ -279,7 +265,6 @@ body {
 
 /******************* Home page *********************/
 
-/* make a grid of two column for the intro */
 .intro {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -313,6 +298,14 @@ intro-img1 {
 .intro-img2 {
   width: 50%;
   height: 50%;
+}
+
+.logo{
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: 2rem;
+  margin-left: 2rem;
 }
 
 /******************* Contact page *********************/
@@ -389,7 +382,6 @@ intro-img1 {
 
   .navigation {
     display: none;
-    /* Hide the desktop navigation on mobile */
   }
 
   .mobile-nav {
@@ -418,11 +410,9 @@ intro-img1 {
   }
 
   .branding {
-    /* Aligns the logo to the left */
     display: flex;
     align-items: center;
     margin-right: auto;
-    /* Pushes everything else to the right */
   }
 
   .menu-button {
@@ -437,11 +427,9 @@ intro-img1 {
     flex-direction: column;
     position: absolute;
     top: 100%;
-    /* Below the nav bar */
     left: 0;
     right: 0;
     background-color: #3c415edf;
-    /* Adjust to match your branding */
     color: rgb(237, 201, 0);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     transition: transform 0.5s ease;
@@ -452,7 +440,6 @@ intro-img1 {
 
   .menu.open {
     transform: translateY(0);
-    /* Show menu */
   }
 
   .menu ul {
@@ -473,10 +460,13 @@ intro-img1 {
     text-align: start;
   }
 
-  .logos {
-    display: flex;
-    flex-direction: row;
+  .logo{
+    flex-wrap: wrap;
+    justify-content: space-around;
     align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 0.1rem;
   }
 
   .intro>div {
