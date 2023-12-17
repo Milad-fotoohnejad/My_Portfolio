@@ -405,8 +405,10 @@ intro-img1 {
 /* ********************* Mobile View *********************** */
 
 @media (max-width: 768px) {
+
   
   .grid-container {
+    background: linear-gradient(0deg, #3c415edf 30%, #41ca74 70%);
     display: block;
     padding-top: 20%;
   }
