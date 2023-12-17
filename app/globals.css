@@ -5,6 +5,7 @@
 body {
   /* gradient background color */
   background: linear-gradient(0deg, #3c415edf 30%, #41ca74 70%);
+  z-index: -2;
   position: relative;
   overflow: hidden; 
   /* background-size: 20px 20px;
@@ -31,7 +32,7 @@ body::before {
   background-position: center;
   background-size: 30%;
   background-blend-mode: lighten;
-  animation: rotation 100s infinite ease-in-out;
+  animation: rotation 100s infinite linear;
 }
 
 @keyframes rotation {
