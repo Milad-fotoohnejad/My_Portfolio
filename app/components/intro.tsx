@@ -81,23 +81,23 @@ export const Introduction = () => {
         </div>
       </div>
       <section>
-        <div className="logos flex op-back mt-1 mb-1 justify-center text-white">
-          <FaJs className="text-5xl logo" />
-          <FaReact className="text-5xl logo" />
-          <FaNodeJs className="text-5xl logo" />
-          <FaHtml5 className="text-5xl logo" />
-          <FaCss3 className="text-5xl logo" />
-          <FaBootstrap className="text-5xl logo" />
-          <FaJava className="text-5xl logo" />
-          <FaPython className="text-5xl logo" />
-          <FaPhp className="text-5xl logo" />
-          <FaDatabase className="text-5xl logo" />
-          <FaGit className="text-5xl logo" />
-          <FaGithub className="text-5xl logo" />
-          <FaGitlab className="text-5xl logo" />
-          <FaDocker className="text-5xl logo" />
-          <FaWordpress className="text-5xl logo" />
-        </div>
+          <div className="logos flex op-back mt-1 mb-1 justify-center rounded-md text-white">
+            <FaJs className="text-5xl logo" />
+            <FaReact className="text-5xl logo" />
+            <FaNodeJs className="text-5xl logo" />
+            <FaHtml5 className="text-5xl logo" />
+            <FaCss3 className="text-5xl logo" />
+            <FaBootstrap className="text-5xl logo" />
+            <FaJava className="text-5xl logo" />
+            <FaPython className="text-5xl logo" />
+            <FaPhp className="text-5xl logo" />
+            <FaDatabase className="text-5xl logo" />
+            <FaGit className="text-5xl logo" />
+            <FaGithub className="text-5xl logo" />
+            <FaGitlab className="text-5xl logo" />
+            <FaDocker className="text-5xl logo" />
+            <FaWordpress className="text-5xl logo" />
+          </div>
       </section>
     </>
   );

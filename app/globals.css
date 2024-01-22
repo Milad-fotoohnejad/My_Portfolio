@@ -146,6 +146,7 @@ html {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  overflow: auto;
 }
 
 .nav-link.active {
@@ -336,8 +337,8 @@ intro-img1 {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  margin-right: 2rem;
-  margin-left: 2rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
 }
 
 /******************* Contact page *********************/
