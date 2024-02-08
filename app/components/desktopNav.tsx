@@ -116,7 +116,7 @@ const Navigation = () => {
             </a>
             <a
               title="Resume"
-              href="https://drive.google.com/file/d/14a7afZRotEG6aUY8p8r8RzvSxvP2e-4L/view?usp=sharing"
+              href="https://drive.google.com/file/d/1bayTjceyDt4OBAVxUXvripZxGySchuG_/view?usp=sharing"
               target="_blank"
               rel="noreferrer"
               className="footer-icon"
