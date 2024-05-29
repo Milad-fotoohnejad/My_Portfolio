@@ -296,8 +296,10 @@ html {
 }
 
 .legal {
-  color: #48DE80;
+  color: #ffffff;
   text-decoration: underline;
+  font-size: 0.8rem;
+  margin-top: -15%;
 }
 
 /******************* Home page *********************/

@@ -132,11 +132,15 @@ const Navigation = () => {
               &copy; {new Date().getFullYear()} <br></br> Milad Fotoohnejad
             </div>
             <br />
-            <div className="text-center text-sm underline text-gray-300">
+            <div className="legal">
               <button
-            className={`nav-link ${isActive("/pages/legal") ? "active" : ""}`}
-            onClick={() => setCurrentRoute("/pages/legal")}
-          >Legal</button>
+                className={`nav-link ${
+                  isActive("/pages/legal") ? "active" : ""
+                }`}
+                onClick={() => setCurrentRoute("/pages/legal")}
+              >
+                Legal
+              </button>
             </div>
           </div>
         </footer>

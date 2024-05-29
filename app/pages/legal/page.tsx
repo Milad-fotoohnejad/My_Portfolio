@@ -2,7 +2,7 @@ import React from "react";
 
 const Legal = () => {
   return (
-    <div className="flex flex-col items-center p-5 rounded-md">
+    <div className="mobile-v flex flex-col items-center justify-between op-back p-5 rounded-md font-sans">
       <h1 className="text-6xl font-bold m-5 text-green-400 w-full text-center font-mono">
         Legal Information
       </h1>
