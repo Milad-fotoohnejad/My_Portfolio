@@ -23,7 +23,9 @@ import lottie from "lottie-web";
 
 export const Introduction = () => {
   const container = React.useRef<HTMLDivElement>(null);
+  const devContainer = React.useRef<HTMLDivElement>(null);
   let animation: any;
+  let developer: any;
 
   React.useEffect(() => {
     animation = lottie.loadAnimation({
@@ -36,6 +38,20 @@ export const Introduction = () => {
 
     return () => {
       animation.destroy();
+    };
+  }, []);
+
+  React.useEffect(() => {
+    developer = lottie.loadAnimation({
+      container: devContainer.current as HTMLDivElement,
+      renderer: "svg",
+      loop: true,
+      autoplay: true,
+      animationData: require("../../public/developer.json"),
+    });
+
+    return () => {
+      developer.destroy();
     };
   }, []);
 
@@ -55,7 +71,7 @@ export const Introduction = () => {
             solutions that make a positive impact on peoples lives.
           </p>
         </div>
-        <div className="circle-frame mt-5">
+        {/* <div className="circle-frame mt-5">
           <Image
             src="/profile.png"
             width={320}
@@ -63,6 +79,9 @@ export const Introduction = () => {
             alt="Nothing"
             className="adjusted-image"
           />
+        </div> */}
+        <div>
+          <div className="lottie" ref={devContainer}></div>
         </div>
         <div>
           <div className="lottie" ref={container}></div>
@@ -81,23 +100,23 @@ export const Introduction = () => {
         </div>
       </div>
       <section>
-          <div className="logos flex op-back mt-1 mb-1 justify-center rounded-md text-white">
-            <FaJs className="text-5xl logo" />
-            <FaReact className="text-5xl logo" />
-            <FaNodeJs className="text-5xl logo" />
-            <FaHtml5 className="text-5xl logo" />
-            <FaCss3 className="text-5xl logo" />
-            <FaBootstrap className="text-5xl logo" />
-            <FaJava className="text-5xl logo" />
-            <FaPython className="text-5xl logo" />
-            <FaPhp className="text-5xl logo" />
-            <FaDatabase className="text-5xl logo" />
-            <FaGit className="text-5xl logo" />
-            <FaGithub className="text-5xl logo" />
-            <FaGitlab className="text-5xl logo" />
-            <FaDocker className="text-5xl logo" />
-            <FaWordpress className="text-5xl logo" />
-          </div>
+        <div className="logos flex op-back mt-1 mb-1 justify-center rounded-md text-white">
+          <FaJs className="text-5xl logo" />
+          <FaReact className="text-5xl logo" />
+          <FaNodeJs className="text-5xl logo" />
+          <FaHtml5 className="text-5xl logo" />
+          <FaCss3 className="text-5xl logo" />
+          <FaBootstrap className="text-5xl logo" />
+          <FaJava className="text-5xl logo" />
+          <FaPython className="text-5xl logo" />
+          <FaPhp className="text-5xl logo" />
+          <FaDatabase className="text-5xl logo" />
+          <FaGit className="text-5xl logo" />
+          <FaGithub className="text-5xl logo" />
+          <FaGitlab className="text-5xl logo" />
+          <FaDocker className="text-5xl logo" />
+          <FaWordpress className="text-5xl logo" />
+        </div>
       </section>
     </>
   );

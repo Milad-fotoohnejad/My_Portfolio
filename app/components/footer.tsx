@@ -30,6 +30,15 @@ const Footer = () => {
         </a>
         <div className="copyright">
           &copy; {new Date().getFullYear()} Milad Fotoohnejad. All rights reserved.
+          <br />
+          <a
+            href="./legal"
+            rel="noreferrer"
+            target="_blank"
+            className="text-green-400 underline"
+          >
+            Legal
+          </a>
         </div>
       </div>
     </footer>
