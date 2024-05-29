@@ -295,6 +295,11 @@ html {
   margin-top: 2rem;
 }
 
+.legal {
+  color: #48DE80;
+  text-decoration: underline;
+}
+
 /******************* Home page *********************/
 
 .intro {

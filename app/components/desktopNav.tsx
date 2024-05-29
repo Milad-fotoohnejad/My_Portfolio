@@ -1,27 +1,32 @@
 "use client";
 import React, { useContext } from "react";
-import { useRouter } from 'next/navigation';
+import { useRouter } from "next/navigation";
 import Image from "next/image";
 import { RouteContext } from "../RouteContext";
-import { FaLinkedin, FaGithub, FaEnvelope, FaReceipt, FaAngleDown } from "react-icons/fa";
+import {
+  FaLinkedin,
+  FaGithub,
+  FaEnvelope,
+  FaReceipt,
+  FaAngleDown,
+} from "react-icons/fa";
 
 const Navigation = () => {
-    const { currentRoute, setCurrentRoute } = useContext(RouteContext);
+  const { currentRoute, setCurrentRoute } = useContext(RouteContext);
 
-  
-    const isActive = (routes: string | string[]) => {
-      if (Array.isArray(routes)) {
-        return routes.includes(currentRoute);
-      }
-      return routes === currentRoute;
-    };
-    
-    const isProjectActive = [
-      "/pages/cm_project",
-      "/pages/viu_project",
-      "/pages/wc_project",
-    ].includes(currentRoute);
-  
+  const isActive = (routes: string | string[]) => {
+    if (Array.isArray(routes)) {
+      return routes.includes(currentRoute);
+    }
+    return routes === currentRoute;
+  };
+
+  const isProjectActive = [
+    "/pages/cm_project",
+    "/pages/viu_project",
+    "/pages/wc_project",
+  ].includes(currentRoute);
+
   return (
     <div className="navigation">
       <div>
@@ -125,6 +130,13 @@ const Navigation = () => {
             </a>
             <div className="copyright text-center">
               &copy; {new Date().getFullYear()} <br></br> Milad Fotoohnejad
+            </div>
+            <br />
+            <div className="text-center text-sm underline text-gray-300">
+              <button
+            className={`nav-link ${isActive("/pages/legal") ? "active" : ""}`}
+            onClick={() => setCurrentRoute("/pages/legal")}
+          >Legal</button>
             </div>
           </div>
         </footer>

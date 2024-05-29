@@ -7,6 +7,7 @@ import CMProjectPage from "./pages/cm_project/page";
 import VIUProjectPage from "./pages/viu_project/page";
 import WCProjectPage from "./pages/wc_project/page";
 import ContactPage from "./pages/contact/page";
+import Legal from "./pages/legal/page";
 import Navigation from "./components/navigation";
 import "./globals.css";
 import { RouteContext } from './RouteContext';
@@ -34,6 +35,8 @@ export default function Home() {
         return <WCProjectPage />;
       case '/pages/contact':
         return <ContactPage />;
+      case '/pages/legal':
+        return <Legal />;
       default:
         return <HomePage />;
     }

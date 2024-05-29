@@ -95,7 +95,7 @@ export const Experiences = () => {
           </div>
         ))}
       </div>
-      <div className="text-center text-md text-gray-300">
+      {/* <div className="text-center text-md text-gray-300">
         <p>
           LottieFiles is by Design Barn Inc. Copyright © 2023 Design Barn Inc.
           All rights reserved.
@@ -113,7 +113,7 @@ export const Experiences = () => {
             copyright © Fonticons, Inc. All rights reserved
           </a>
         </p>
-      </div>
+      </div> */}
     </div>
   );
 };
