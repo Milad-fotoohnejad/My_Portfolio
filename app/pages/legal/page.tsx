@@ -1,4 +1,5 @@
 import React from "react";
+import { useRouter } from "next/router";
 
 const Legal = () => {
   return (
@@ -40,16 +41,27 @@ const Legal = () => {
           </p>
         </div>
         <div className="mb-6">
+          <h2 className="text-3xl font-semibold text-green-400">Terms of Use</h2>
+          <p className="mt-2">
+            By using this website, you agree to comply with and be bound by the following terms and conditions of use. These terms govern your use of this website, including all materials, documents, and information presented herein. If you disagree with any part of these terms, please do not use our website.
+          </p>
+          <p className="mt-2">
+            The content provided on this website is for informational purposes only. We make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability, or availability with respect to the website or the information, products, services, or related graphics contained on the website for any purpose. Any reliance you place on such information is therefore strictly at your own risk.
+          </p>
+        </div>
+        <div className="mb-6">
+          <h2 className="text-3xl font-semibold text-green-400">Privacy Policy</h2>
+          <p className="mt-2">
+            We are committed to protecting your privacy. This policy outlines how we handle your personal information. We will not use or share your information with anyone except as described in this Privacy Policy.
+          </p>
+          <p className="mt-2">
+            We collect and use personal information solely for the purpose of providing and improving our services. By using the website, you agree to the collection and use of information in accordance with this policy.
+          </p>
+        </div>
+        <div className="mb-6">
           <h2 className="text-3xl font-semibold text-green-400">Contact Information</h2>
           <p className="mt-2">
-            For any questions or concerns regarding the use of these resources, please contact us at:
-            <br />
-            <a
-              href="mailto:info@yourwebsite.com"
-              className="text-green-400 underline"
-            >
-              info@yourwebsite.com
-            </a>
+            For any questions or concerns regarding the use of these resources, please refer to the contact page.
           </p>
         </div>
       </div>
