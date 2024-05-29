@@ -17,13 +17,14 @@ import {
   FaDocker,
 } from "react-icons/fa";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from "react";
+import React, { useRef, useEffect, useState } from "react";
 import Image from "next/image";
 import lottie from "lottie-web";
 
 export const Introduction = () => {
   const container = React.useRef<HTMLDivElement>(null);
   const devContainer = React.useRef<HTMLDivElement>(null);
+  const [imageSrc, setImageSrc] = useState<string | null>(null);
   let animation: any;
   let developer: any;
 
@@ -41,13 +42,42 @@ export const Introduction = () => {
     };
   }, []);
 
-  React.useEffect(() => {
-    developer = lottie.loadAnimation({
+  useEffect(() => {
+    const developer = lottie.loadAnimation({
       container: devContainer.current as HTMLDivElement,
       renderer: "svg",
       loop: true,
       autoplay: true,
       animationData: require("../../public/developer.json"),
+    });
+
+    developer.addEventListener("DOMLoaded", () => {
+      // Render the animation to the first frame and capture it as an image
+      developer.goToAndStop(0, true);
+
+      const svgElement = devContainer.current?.querySelector("svg");
+      if (svgElement) {
+        const svgData = new XMLSerializer().serializeToString(svgElement);
+        const svgBlob = new Blob([svgData], {
+          type: "image/svg+xml;charset=utf-8",
+        });
+        const url = URL.createObjectURL(svgBlob);
+
+        const img = new window.Image();
+        img.onload = () => {
+          const canvas = document.createElement("canvas");
+          canvas.width = img.width;
+          canvas.height = img.height;
+          const ctx = canvas.getContext("2d");
+          if (ctx) {
+            ctx.drawImage(img, 0, 0);
+            const imageData = canvas.toDataURL("image/png");
+            setImageSrc(imageData);
+            URL.revokeObjectURL(url);
+          }
+        };
+        img.src = url;
+      }
     });
 
     return () => {
@@ -80,9 +110,16 @@ export const Introduction = () => {
             className="adjusted-image"
           />
         </div> */}
-        <div>
-          <div className="lottie" ref={devContainer}></div>
+        <div className="lottie-image-container">
+          {imageSrc ? (
+            <img src={imageSrc} alt="Lottie Animation Frame" />
+          ) : (
+            <div ref={devContainer} style={{ display: "none" }} />
+          )}
         </div>
+        {/* <div>
+          <div className="lottie" ref={devContainer}></div>
+        </div> */}
         <div>
           <div className="lottie" ref={container}></div>
         </div>
