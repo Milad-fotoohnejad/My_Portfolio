@@ -8,7 +8,7 @@ export const Experiences = () => {
       company: "VIU Culinary Department",
       duration: "April 2023 – June 2023",
       location: "Nanaimo, BC",
-      status: "Currently in progress",
+      status: "Completed",
       duties: [
         "Designed a dynamic recipe booklet built with Flutter, Firebase Database and Authentication",
         "Developed a parser in Flutter, converting Excel recipe spreadsheets into JSON array format",
@@ -19,12 +19,18 @@ export const Experiences = () => {
       title: "Wedding Ceremony/Website",
       company: "Freelance",
       duration: "Feb 2024 – Apr 2024",
+      location: "Vancouver, BC",
       status: "Completed",
       duties: [
         "Created a website for clients that presents a timeline of their life story",
         "Implemented an RSVP page connected to a database for real-time guest updates",
-        "Built with Elementor",
-        "Website: https://hamsarfor.life/",
+        "Designed a user-friendly interface with a focus on aesthetics and functionality with Elementor",
+        <a
+            href="https://hamsarfor.life/"
+            title="Website"
+            target="_blank"
+            rel="noopener noreferrer"
+          >Go to website</a>,
       ],
     },
     {
