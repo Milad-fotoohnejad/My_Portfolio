@@ -25,12 +25,12 @@ export const Experiences = () => {
         "Created a website for clients that presents a timeline of their life story",
         "Implemented an RSVP page connected to a database for real-time guest updates",
         "Designed a user-friendly interface with a focus on aesthetics and functionality with Elementor",
-        <a
-            href="https://hamsarfor.life/"
-            title="Website"
-            target="_blank"
-            rel="noopener noreferrer"
-          >Go to website</a>,
+        // <a
+        //     href="https://hamsarfor.life/"
+        //     title="Website"
+        //     target="_blank"
+        //     rel="noopener noreferrer"
+        //   >Go to website</a>,
       ],
     },
     {
