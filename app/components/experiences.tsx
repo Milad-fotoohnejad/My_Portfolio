@@ -16,13 +16,15 @@ export const Experiences = () => {
       ],
     },
     {
-      title: "Hair Brain Web/Mobile Application",
+      title: "Wedding Ceremony/Website",
       company: "Freelance",
-      duration: "2023",
-      status: "Currently in progress",
+      duration: "Feb 2024 – Apr 2024",
+      status: "Completed",
       duties: [
-        "Developing a web and mobile application for a hair salon that will show user accounts, appointments, and other features such as storing images and videos of customers",
-        "Technologies used: React, React Native, Node.js, Express, MongoDB, Firebase, and AWS",
+        "Created a website for clients that presents a timeline of their life story",
+        "Implemented an RSVP page connected to a database for real-time guest updates",
+        "Built with Elementor",
+        "Website: https://hamsarfor.life/",
       ],
     },
     {
