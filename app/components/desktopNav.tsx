@@ -29,7 +29,7 @@ const Navigation = () => {
 
   return (
     <div className="navigation">
-      <div>
+      <div className="logo-wrapper">
         <a href="/">
           <Image
             src="/LOGO_M.png"
