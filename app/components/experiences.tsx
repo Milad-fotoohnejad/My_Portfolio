@@ -64,7 +64,7 @@ export const Experiences = () => {
         <Typewriter
           text="What I experienced..."
           trigger={inView}
-          className="text-6xl font-bold m-5 text-green-400 w-full text-center font-mono"
+          className="text-5xl font-bold m-5 text-green-400 w-full text-center font-mono"
         />
       </div>
       <div className="grid md:grid-cols-2 gap-10">

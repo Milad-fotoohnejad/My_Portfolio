@@ -39,20 +39,20 @@ export const Education = () => {
 
   return (
     <div className="mobile-v flex flex-col md:flex-row items-center justify-between op-back p-5 rounded-md font-sans">
-      <div className="w-full md:w-1/2 m-2">
+      <div className="w-full md:w-1/2 mb-5 m-2">
         <div ref={ref} className="w-full">
           <Typewriter
             text="What I studied..."
             trigger={inView}
-            className="text-6xl font-bold m-5 text-green-400 w-full text-center font-mono"
+            className="text-4xl font-bold mb-8 text-green-400 w-full text-center font-mono"
           />
         </div>
         <div className="w-full op-back p-5 rounded-lg shadow-lg my-5">
           <div className="flex items-center space-x-5">
             <Image
               src="/viu_logo.png"
-              width={52}
-              height={52}
+              width={60}
+              height={60}
               alt="Nothing"
               className="rounded-full"
             />
@@ -98,19 +98,19 @@ export const Education = () => {
         </div>
       </div>
 
-      <div className="w-full md:w-1/2 m-2">
+      <div className="w-full md:w-1/2">
       <div ref={ref} className="w-full">
           <Typewriter
             text="What my skills are..."
             trigger={inView}
-            className="text-6xl font-bold mb-16 text-green-400 w-full text-center font-mono"
+            className="text-4xl font-bold mb-8 text-green-400 w-full text-center font-mono"
           />
         </div>
         <div className="flex flex-wrap justify-around">
           {skills.map((skill, index) => (
             <button
               key={index}
-              className="inline-block mt-5 m-2 op-back px-5 py-2 rounded-lg shadow-lg text-white transition-colors duration-200 ease-in-out hover:bg-green-400"
+              className="inline-block m-2 op-back px-5 py-2 rounded-lg shadow-lg text-white transition-colors duration-200 ease-in-out hover:bg-green-400"
             >
               {skill}
             </button>
