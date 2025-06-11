@@ -1,4 +1,6 @@
 "use client";
+import { useInView } from "react-intersection-observer";
+import Typewriter from "./typewriter";
 import {
   FaReact,
   FaNodeJs,
@@ -25,6 +27,10 @@ export const Introduction = () => {
   const container = React.useRef<HTMLDivElement>(null);
   const devContainer = React.useRef<HTMLDivElement>(null);
   const [imageSrc, setImageSrc] = useState<string | null>(null);
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.3,
+  });
   let animation: any;
   let developer: any;
 
@@ -89,9 +95,13 @@ export const Introduction = () => {
     <>
       <div className="intro op-back p-4 text-white text-justify rounded-md font-sans">
         <div className="mt-5 mx-5">
-          <h1 className="text-6xl font-bold m-5 text-green-400 font-mono">
-            Hi, I&apos;m Milad
-          </h1>
+          <div ref={ref} className="w-full">
+            <Typewriter
+              text="Hi, I&apos;m Milad!"
+              trigger={inView}
+              className="text-6xl font-bold m-5 text-green-400 w-full text-center font-mono"
+            />
+          </div>
           <p className="text-xl p1">
             <span className="text-2xl text-green-300">Who am I?</span>
             <br />

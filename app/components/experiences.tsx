@@ -1,7 +1,13 @@
 import React from "react";
 import Image from "next/image";
+import { useInView } from "react-intersection-observer";
+import Typewriter from "./typewriter";
 
 export const Experiences = () => {
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.3,
+  });
   const experiences = [
     {
       title: "Culinary Web/Mobile Application",
@@ -25,12 +31,6 @@ export const Experiences = () => {
         "Created a website for clients that presents a timeline of their life story",
         "Implemented an RSVP page connected to a database for real-time guest updates",
         "Designed a user-friendly interface with a focus on aesthetics and functionality with Elementor",
-        // <a
-        //     href="https://hamsarfor.life/"
-        //     title="Website"
-        //     target="_blank"
-        //     rel="noopener noreferrer"
-        //   >Go to website</a>,
       ],
     },
     {
@@ -60,9 +60,13 @@ export const Experiences = () => {
 
   return (
     <div className="mobile-v flex flex-col items-center op-back p-5 rounded-md">
-      <h1 className="text-6xl font-bold m-5 text-green-400 w-full text-center font-mono">
-        I experienced...
-      </h1>
+      <div ref={ref} className="w-full">
+        <Typewriter
+          text="What I experienced..."
+          trigger={inView}
+          className="text-6xl font-bold m-5 text-green-400 w-full text-center font-mono"
+        />
+      </div>
       <div className="grid md:grid-cols-2 gap-10">
         {experiences.map((exp, index) => (
           <div

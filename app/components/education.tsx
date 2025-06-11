@@ -1,7 +1,13 @@
 import React from "react";
 import Image from "next/image";
+import { useInView } from "react-intersection-observer";
+import Typewriter from "./typewriter";
 
 export const Education = () => {
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.3,
+  });
   const skills = [
     "HTML",
     "JavaScript",
@@ -31,7 +37,13 @@ export const Education = () => {
   return (
     <div className="mobile-v flex flex-col md:flex-row items-center justify-between op-back p-5 rounded-md font-sans">
       <div className="w-full md:w-1/2 m-2">
-        <h1 className="text-6xl font-bold m-5 text-green-400 font-mono">I studied...</h1>
+        <div ref={ref} className="w-full">
+          <Typewriter
+            text="What I studied..."
+            trigger={inView}
+            className="text-6xl font-bold m-5 text-green-400 w-full text-center font-mono"
+          />
+        </div>
         <div className="w-full op-back p-5 rounded-lg shadow-lg my-5">
           <div className="flex items-center space-x-5">
             <Image
@@ -84,9 +96,13 @@ export const Education = () => {
       </div>
 
       <div className="w-full md:w-1/2 m-2">
-        <h1 className="text-6xl font-bold m-5 text-green-400 font-mono">
-          My skills are...
-        </h1>
+      <div ref={ref} className="w-full">
+          <Typewriter
+            text="What my skills are..."
+            trigger={inView}
+            className="text-6xl font-bold m-5 text-green-400 w-full text-center font-mono"
+          />
+        </div>
         <div className="flex flex-wrap justify-around">
           {skills.map((skill, index) => (
             <button
