@@ -11,6 +11,9 @@ export const Education = () => {
   const skills = [
     "HTML",
     "JavaScript",
+    "TypeScript",
+    "Python",
+    "Java",
     "ReactJS",
     "NextJS",
     "CSS",
@@ -100,7 +103,7 @@ export const Education = () => {
           <Typewriter
             text="What my skills are..."
             trigger={inView}
-            className="text-6xl font-bold m-5 text-green-400 w-full text-center font-mono"
+            className="text-6xl font-bold mb-16 text-green-400 w-full text-center font-mono"
           />
         </div>
         <div className="flex flex-wrap justify-around">
