@@ -23,8 +23,8 @@ export const Experiences = () => {
     },
     {
       title: "Wedding Ceremony/Website",
-      company: "Freelance",
-      duration: "Feb 2024 – Apr 2024",
+      company: "Freelance Project",
+      duration: "February 2025 – April 2025",
       location: "Vancouver, BC",
       status: "Completed",
       duties: [
