@@ -28,8 +28,8 @@ export const Experiences = () => {
       location: "Vancouver, BC",
       status: "Completed",
       duties: [
-        "Created a website for clients that presents a timeline of their life story",
-        "Implemented an RSVP page connected to a database for real-time guest updates",
+        "Created a website for clients that presents a timeline of their patrnership story",
+        "Implemented a RSVP page connected to a database for real-time guest's list updates",
         "Designed a user-friendly interface with a focus on aesthetics and functionality with Elementor",
       ],
     },
@@ -52,7 +52,7 @@ export const Experiences = () => {
       location: "Katowice, Poland",
       status: "Completed",
       duties: [
-        "Contributed to a global youth-led organization dedicated to providing young people in six schools (120 students in total) with leadership development opportunities through international exchange and volunteer programs.",
+        "Contributed to a global youth-led organization dedicated to providing young people in six schools (120 students in total) with leadership development opportunities through international exchange and volunteer programs",
         "Demonstrated teamwork, critical thinking, and adaptability skills by successfully collaborating with a diverse group of individuals and successfully adapting to various challenging situations",
       ],
     },
