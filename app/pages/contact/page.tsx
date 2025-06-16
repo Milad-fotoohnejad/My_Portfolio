@@ -69,7 +69,7 @@ export default function Contact() {
           </a>
           <a
             title="Resume"
-            href="https://drive.google.com/file/d/1bayTjceyDt4OBAVxUXvripZxGySchuG_/view?usp=sharing"
+            href="https://drive.google.com/file/d/1S-NVyHtiCWz9pU5DTSUUw-Ji6XIwYd5k/view?usp=sharing"
             target="_blank"
             rel="noreferrer"
             className="footer-icon"
