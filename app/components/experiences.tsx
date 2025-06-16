@@ -30,7 +30,7 @@ export const Experiences = () => {
       duties: [
         "Created a website for clients that presents a timeline of their patrnership story",
         "Implemented a RSVP page connected to a database for real-time guest's list updates",
-        "Designed a user-friendly interface with a focus on aesthetics and functionality with Elementor",
+        "Designed a user-friendly interface with a focus on aesthetics and functionality with Elementor (WordPress)",
       ],
     },
     {
