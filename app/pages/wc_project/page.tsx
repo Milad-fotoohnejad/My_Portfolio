@@ -89,7 +89,7 @@ export default function VbProject() {
             </div>
           </section>
 
-          <section className="op-back rounded-md p-3">
+          <section className="op-back content-bottom rounded-md p-3">
             <h2 className="font-mono text-2xl mb-4">Introduction</h2>
             <button className="web flex text-gray-800 bg-blue-200 rounded-md p-2 mb-2 justify-center text-lg">
             <a href="https://milad-fotoohnejad.github.io/WhichCam_Web/index.html" > Visit Website</a>

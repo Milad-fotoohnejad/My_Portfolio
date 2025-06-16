@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 
 const Legal = () => {
   return (
-    <div className="mobile-v flex flex-col items-center justify-between op-back p-5 rounded-md font-sans">
+    <div className="mobile-v flex flex-col items-center justify-between op-back content-bottom p-5 rounded-md font-sans">
       <h1 className="text-6xl font-bold m-5 text-green-400 w-full text-center font-mono">
         Legal Information
       </h1>

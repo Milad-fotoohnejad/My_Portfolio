@@ -21,7 +21,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="op-back">
+    <div className="op-back content-bottom">
       <div className="formContent font-mono">
         <p className="title text-2xl text-green-400 mt-5">Please share you opinion with me</p>
         <form id="contactForm" onSubmit={sendEmail}>

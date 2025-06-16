@@ -41,7 +41,7 @@ export default function CmProject() {
   };
   return (
     <>
-      <div className="op-back rounded-md p-5">
+      <div className="op-back content-bottom rounded-md p-5">
         <div className="text-white">
           <h1 className="font-mono text-4xl mb-6">Classic Mafia Game</h1>
 
