@@ -456,7 +456,8 @@ html {
   .grid-container {
     background: linear-gradient(0deg, #3c415edf 30%, #41ca74 70%);
     display: block;
-    padding-top: 20%;
+    height: auto;
+    margin-top: 20%;
   }
 
 
@@ -474,6 +475,7 @@ html {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
     position: relative; 
     z-index: 1; 
+    margin-bottom: 10%;
   }
 
   .mobile-nav {
@@ -585,5 +587,6 @@ html {
 
   .mobile-v h1 {
     font-size: 2rem;
+    margin-bottom: 10%;
   }
 }

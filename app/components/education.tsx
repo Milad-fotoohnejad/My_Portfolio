@@ -42,7 +42,7 @@ export const Education = () => {
       <div className="w-full md:w-1/2 mb-5 m-2">
         <div ref={ref} className="w-full">
           <Typewriter
-            text="What I studied..."
+            text="What I studied"
             trigger={inView}
             className="text-4xl font-bold mb-8 text-green-400 w-full text-center font-mono"
           />
@@ -101,7 +101,7 @@ export const Education = () => {
       <div className="w-full md:w-1/2">
       <div ref={ref} className="w-full">
           <Typewriter
-            text="What my skills are..."
+            text="What my skills are"
             trigger={inView}
             className="text-4xl font-bold mb-8 text-green-400 w-full text-center font-mono"
           />
