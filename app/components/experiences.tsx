@@ -9,6 +9,42 @@ export const Experiences = () => {
     threshold: 0.3,
   });
   const experiences = [
+    // {
+    //   title: "Co-Founder - Lead Designer/Developer",
+    //   company: "The DevNest Studio",
+    //   duration: "October 2024 – Present",
+    //   location: "Vancouver, BC",
+    //   status: "Completed",
+    //   duties: [
+    //     "Designed and developed a full-scale digital solutions platform offering custom web development, as a part of a team",
+    //     "Engineered and deployed responsive web applications with modern frameworks, ensuring cross-platform compatibility",
+    //     "Managed end-to-end software development life-cycles, including testing, quality assurance, deployment, and ongoing maintenance",
+    //   ],
+    // },
+    {
+      title: "Wedding Ceremony/Website",
+      company: "Freelance Project",
+      duration: "February 2025 – April 2025",
+      location: "Vancouver, BC",
+      status: "Completed",
+      duties: [
+        "Created a website for clients that presents a timeline of their patrnership story",
+        "Implemented a RSVP page connected to a database for real-time guest's list updates",
+        "Designed a user-friendly interface with a focus on aesthetics and functionality with Elementor (WordPress)",
+      ],
+    },
+    {
+      title: "Internet Assessor",
+      company: "Telus Digital",
+      duration: "November 2023 – Present",
+      location: "Vancouver, BC",
+      status: "Completed",
+      duties: [
+        "Created a website for clients that presents a timeline of their patrnership story",
+        "Implemented a RSVP page connected to a database for real-time guest's list updates",
+        "Designed a user-friendly interface with a focus on aesthetics and functionality with Elementor (WordPress)",
+      ],
+    },
     {
       title: "Culinary Web/Mobile Application",
       company: "VIU Culinary Department",
@@ -22,15 +58,15 @@ export const Experiences = () => {
       ],
     },
     {
-      title: "Wedding Ceremony/Website",
-      company: "Freelance Project",
-      duration: "February 2025 – April 2025",
-      location: "Vancouver, BC",
+      title: "Welding Inspection Intern",
+      company: "Fateh Sanat Co.",
+      duration: "2016 – 2017",
+      location: "Shiraz, Iran",
       status: "Completed",
       duties: [
-        "Created a website for clients that presents a timeline of their patrnership story",
-        "Implemented a RSVP page connected to a database for real-time guest's list updates",
-        "Designed a user-friendly interface with a focus on aesthetics and functionality with Elementor (WordPress)",
+        "Inspected weld joints on piping and structural components according to AP 1104 and AWS D1.1 code requirements",
+        "Conducted visual and dimensional inspections; maintained inspection logs and non-conformance reports",
+        "Collaborated with fabrication and QA teams to support safe, quality-driven work practices",
       ],
     },
     {
