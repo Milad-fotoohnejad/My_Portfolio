@@ -135,7 +135,7 @@ const Introduction: React.FC = () => {
         </div>
 
         {/* Right: portrait / device mock / brand visual */}
-        <div className="order-1 md:order-2">
+        <div className="order-1 md:order-2 ">
           <motion.div
             initial={{ opacity: 0, y: 12, scale: 0.98 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
@@ -150,7 +150,7 @@ const Introduction: React.FC = () => {
               src="/me.png"
               alt="Milad Fotoohnejad"
               fill
-              className="object-cover object-top rounded-lg"
+              className="object-cover object-top rounded-lg brightness-90"
               priority
             />
 
