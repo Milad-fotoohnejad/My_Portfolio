@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import { useRouter, usePathname } from 'next/navigation';
 import HomePage from "./pages/home";
 import CMProjectPage from "./pages/cm_project/page";
+import WcProject from "./pages/wed_project/page";
 import VIUProjectPage from "./pages/viu_project/page";
 import WCProjectPage from "./pages/wc_project/page";
 import ContactPage from "./pages/contact/page";
@@ -29,6 +30,8 @@ export default function Home() {
         return <HomePage />;
       case '/pages/cm_project':
         return <CMProjectPage />;
+      case '/pages/wed_project':
+        return <WcProject />;
       case '/pages/viu_project':
         return <VIUProjectPage />;
       case '/pages/wc_project':

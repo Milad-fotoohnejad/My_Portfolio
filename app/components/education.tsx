@@ -44,7 +44,7 @@ export const Education = () => {
           <Typewriter
             text="What I studied"
             trigger={inView}
-            className="text-4xl font-bold mb-8 text-green-400 w-full text-center font-mono"
+            className="text-4xl mb-8 text-green-400 w-full text-center font-mono"
           />
         </div>
         <div className="w-full op-back p-5 rounded-lg shadow-lg my-5">
@@ -56,7 +56,7 @@ export const Education = () => {
               alt="Nothing"
               className="rounded-full"
             />
-            <div className="block pl-2 font-semibold text-xl self-start text-gray-200">
+            <div className="block pl-2 text-xl self-start text-gray-200">
               <h2 className="leading-relaxed text-green-400">
                 ITAS - Web And Mobile Application Development
               </h2>
@@ -81,7 +81,7 @@ export const Education = () => {
               alt="Nothing"
               className="rounded-full"
             />
-            <div className="block pl-2 font-semibold text-xl self-start text-gray-200">
+            <div className="block pl-2 text-xl self-start text-gray-200">
               <h2 className="leading-relaxed text-green-400">
                 Industrial Engineering - Industrial Safety
               </h2>
@@ -103,7 +103,7 @@ export const Education = () => {
           <Typewriter
             text="What my skills are"
             trigger={inView}
-            className="text-4xl font-bold mb-8 text-green-400 w-full text-center font-mono"
+            className="text-4xl mb-8 text-green-400 w-full text-center font-mono"
           />
         </div>
         <div className="flex flex-wrap justify-around">

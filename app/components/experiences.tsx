@@ -95,7 +95,7 @@ export const Experiences = () => {
   ];
 
   return (
-    <div className="mobile-v mt-1 flex flex-col items-center content-bottom op-back p-5 rounded-md">
+    <div id="projects" className="mobile-v mt-1 flex flex-col items-center content-bottom op-back p-5 rounded-md">
       <div ref={ref} className="w-full">
         <Typewriter
           text="What I experienced..."

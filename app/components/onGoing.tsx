@@ -47,7 +47,7 @@ export const OnGoing = () => {
         <Typewriter
           text="In-Progress Projects..."
           trigger={inView}
-          className="text-5xl font-bold m-5 text-yellow-400 w-full text-center font-mono"
+          className="text-5xl font-bold m-5 text-blue-300 w-full text-center font-mono"
         />
       </div>
 
@@ -66,7 +66,7 @@ export const OnGoing = () => {
                 className="rounded-full bg-white"
               />
               <div className="block pl-2 font-semibold text-xl self-start text-gray-200">
-                <h2 className="leading-relaxed text-yellow-300">
+                <h2 className="leading-relaxed text-blue-300">
                   {project.title}
                 </h2>
                 <p className="text-sm text-gray-100 leading-none mt-1">
@@ -74,7 +74,7 @@ export const OnGoing = () => {
                     href={project.companyLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-sm text-blue-300 leading-none mt-1 underline hover:text-yellow-300"
+                    className="text-sm text-blue-300 leading-none mt-1 underline hover:text-green-300"
                   >
                     {project.company}
                   </a>
@@ -85,7 +85,7 @@ export const OnGoing = () => {
                 <p className="text-sm text-gray-100 leading-none mt-1">
                   {project.location}
                 </p>
-                <p className="text-sm text-yellow-400 leading-none mt-1">
+                <p className="text-sm text-blue-300 leading-none mt-1">
                   {project.status}
                 </p>
               </div>
