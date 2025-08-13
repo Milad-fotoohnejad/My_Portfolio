@@ -150,7 +150,7 @@ const Introduction: React.FC = () => {
               src="/me.png"
               alt="Milad Fotoohnejad"
               fill
-              className="object-cover object-top rounded-lg brightness-90"
+              className="object-cover object-top rounded-lg brightness-50"
               priority
             />
 
