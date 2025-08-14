@@ -1,8 +1,9 @@
-'use client';
+"use client";
 
 import React, { useState, useEffect } from "react";
-import { useRouter, usePathname } from 'next/navigation';
+import { useRouter, usePathname } from "next/navigation";
 import HomePage from "./pages/home";
+import ProjectsPage from "./pages/projects/page";
 import CMProjectPage from "./pages/cm_project/page";
 import WcProject from "./pages/wed_project/page";
 import VIUProjectPage from "./pages/viu_project/page";
@@ -11,7 +12,7 @@ import ContactPage from "./pages/contact/page";
 import Legal from "./pages/legal/page";
 import Navigation from "./components/navigation";
 import "./globals.css";
-import { RouteContext } from './RouteContext';
+import { RouteContext } from "./RouteContext";
 
 export default function Home() {
   const [currentRoute, setCurrentRoute] = useState<string>("/");
@@ -19,31 +20,33 @@ export default function Home() {
   const pathname = usePathname();
 
   useEffect(() => {
-    if (pathname !== '/') {
+    if (pathname !== "/") {
       setCurrentRoute(pathname);
     }
   }, [pathname]);
 
   const renderContent = () => {
     switch (currentRoute) {
-      case '/':
+      case "/":
         return <HomePage />;
-      case '/pages/cm_project':
+      case "/pages/projects": // ✅ new route
+        return <ProjectsPage />;
+      case "/pages/cm_project":
         return <CMProjectPage />;
-      case '/pages/wed_project':
+      case "/pages/wed_project":
         return <WcProject />;
-      case '/pages/viu_project':
+      case "/pages/viu_project":
         return <VIUProjectPage />;
-      case '/pages/wc_project':
+      case "/pages/wc_project":
         return <WCProjectPage />;
-      case '/pages/contact':
+      case "/pages/contact":
         return <ContactPage />;
-      case '/pages/legal':
+      case "/pages/legal":
         return <Legal />;
       default:
         return <HomePage />;
     }
-  }
+  };
 
   return (
     <RouteContext.Provider value={{ currentRoute, setCurrentRoute }}>
@@ -51,9 +54,7 @@ export default function Home() {
         <div>
           <Navigation />
         </div>
-        <div className="content">
-          {renderContent()}
-        </div>
+        <div className="content">{renderContent()}</div>
       </div>
     </RouteContext.Provider>
   );

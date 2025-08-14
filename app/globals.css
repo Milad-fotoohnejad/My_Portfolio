@@ -3,8 +3,7 @@
 @tailwind utilities;
 
 body {
-  /* gradient background color */
-  background: linear-gradient(0deg, #ecf7ffdf 30%, #41acca 70%);
+  background: linear-gradient(0deg, #ecf7ffdf 30%, #41aaa8 70%);
   z-index: -2;
   position: relative;
   overflow: hidden; 
@@ -58,6 +57,8 @@ html {
   }
 } */
 
+
+
 .op-back {
   background-color: #3c415edf;
 }
@@ -73,7 +74,6 @@ html {
     opacity: 0;
   }
 }
-
 
 .circle-frame {
   border-radius: 50%;
@@ -335,6 +335,18 @@ html {
   text-decoration: underline;
   font-size: 0.8rem;
   margin-top: -15%;
+}
+
+/****************** Projects Page ********************/
+
+/* in globals.css (optional) */
+.card-hover {
+  transform: translateY(0);
+  transition: transform 200ms ease, box-shadow 200ms ease;
+}
+.card-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.2);
 }
 
 /******************* Home page *********************/

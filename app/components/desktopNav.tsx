@@ -22,6 +22,7 @@ const Navigation = () => {
   };
 
   const isProjectActive = [
+    "/pages/projects",
     "/pages/cm_project",
     "/pages/wed_project",
     "/pages/viu_project",
@@ -50,11 +51,14 @@ const Navigation = () => {
             Home
           </button>
           <div className="dropdown">
-            <button className={`dropbtn ${isProjectActive ? "active" : ""}`}>
+            <button
+              className={`dropbtn ${isProjectActive ? "active" : ""}`}
+              onClick={() => setCurrentRoute("/pages/projects")} 
+            >
               Projects
             </button>
 
-            <div className="dropdown-content">
+            {/* <div className="dropdown-content">
               <button
                 className="nav-link"
                 onClick={() => {
@@ -89,7 +93,7 @@ const Navigation = () => {
               >
                 WhichCam Web
               </button>
-            </div>
+            </div> */}
           </div>
           <button
             className={`nav-link ${isActive("/pages/contact") ? "active" : ""}`}
