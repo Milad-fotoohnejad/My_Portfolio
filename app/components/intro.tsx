@@ -61,8 +61,7 @@ const Introduction: React.FC = () => {
           </div>
 
           <h2 className="mt-4 text-2xl md:text-3xl font-semibold text-white">
-            Web & Mobile Developer focused on shipping performant, scalable
-            products.
+            Web & Mobile App Developer focused on creating fast, reliable, and user-friendly products.
           </h2>
 
           <p className="mt-4 text-gray-300 leading-relaxed">

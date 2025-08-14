@@ -7,7 +7,7 @@ type ProjectCard = {
   title: string;
   blurb: string;
   image: string;
-  href: string;
+  href?: string;
   live?: string;
   tags: string[];
 };
@@ -20,7 +20,6 @@ const cards: ProjectCard[] = [
       "A platform designed to showcase our creative and technical capabilities while laying the groundwork for scalable digital services.",
     image: "/DNS.png",
     href: "https://www.thedevnest.ca/",
-    live: "https://www.thedevnest.ca/",
     tags: ["ReactJS", "Tailwind CSS", "ThreeJS", "MongoDB", "GitHub Actions"],
   },
   {
@@ -121,12 +120,14 @@ export default function ProjectsPage() {
               </div>
 
               <div className="mt-4 flex items-center gap-3">
-                <button
-                  onClick={() => openDetails(p.href)}
+                <a
+                  href={p.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="rounded-lg bg-emerald-400 px-3 py-2 text-sm font-semibold text-slate-900 hover:bg-emerald-300 transition"
                 >
                   View details
-                </button>
+                </a>
 
                 {p.live && (
                   <a
