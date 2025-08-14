@@ -7,7 +7,7 @@ type ProjectCard = {
   title: string;
   blurb: string;
   image: string;
-  href?: string;
+  href: string;
   live?: string;
   tags: string[];
 };
@@ -20,6 +20,7 @@ const cards: ProjectCard[] = [
       "A platform designed to showcase our creative and technical capabilities while laying the groundwork for scalable digital services.",
     image: "/DNS.png",
     href: "https://www.thedevnest.ca/",
+    live: "https://www.thedevnest.ca/",
     tags: ["ReactJS", "Tailwind CSS", "ThreeJS", "MongoDB", "GitHub Actions"],
   },
   {
@@ -27,14 +28,14 @@ const cards: ProjectCard[] = [
     blurb:
       "This portfolio site built with Next.js, Tailwind CSS, and TypeScript. Features dynamic routing and responsive design.",
     image: "/bg_01.png", // add an image to /public
-    href: "/",
+    href: "/pages/",
     tags: ["Next.js", "Tailwind CSS", "TypeScript"],
   },
   {
     title: "Classic Mafia Game",
     blurb:
       "Real-time multiplayer social deduction built with React, Node.js, Socket.io, and Firebase.",
-    image: "/cm1.png",            // add an image to /public
+    image: "/cm1.png", // add an image to /public
     href: "/pages/cm_project",
     tags: ["React", "NodeJS", "Socket.io", "Firebase"],
   },
@@ -42,7 +43,7 @@ const cards: ProjectCard[] = [
     title: "Wedding Website",
     blurb:
       "Story-driven wedding site with timeline and database-backed RSVP for real-time guest tracking.",
-    image: "/ww1.png",       // add an image to /public
+    image: "/ww1.png", // add an image to /public
     href: "/pages/wed_project",
     live: "https://hamsarfor.life/",
     tags: ["WordPress", "PHP", "MySQL", "Elementor"],
@@ -51,7 +52,7 @@ const cards: ProjectCard[] = [
     title: "VIU Culinary App",
     blurb:
       "Cross-platform recipe booklet: Flutter + Firebase with spreadsheet-to-JSON parser.",
-    image: "/bv-1.png",           // add an image to /public
+    image: "/bv-1.png", // add an image to /public
     href: "/pages/viu_project",
     tags: ["Flutter", "Firebase", "Auth"],
   },
@@ -59,7 +60,7 @@ const cards: ProjectCard[] = [
     title: "WhichCam Web",
     blurb:
       "A website to help users choose the right camera for their needs, featuring a user-friendly interface and detailed camera specifications.",
-    image: "/wc-1.png",      // add an image to /public
+    image: "/wc-1.png", // add an image to /public
     href: "/pages/wc_project",
     live: "https://milad-fotoohnejad.github.io/WhichCam_Web/index.html",
     tags: ["HTML5", "CSS3", "JS"],
@@ -78,7 +79,8 @@ export default function ProjectsPage() {
       <header className="mb-6">
         <h1 className="font-mono text-4xl text-white">Projects</h1>
         <p className="mt-2 text-gray-300">
-          A selection of shipped work and in‑progress builds. Click any card to view details.
+          A selection of shipped work and in‑progress builds. Click any card to
+          view details.
         </p>
       </header>
 
@@ -120,14 +122,15 @@ export default function ProjectsPage() {
               </div>
 
               <div className="mt-4 flex items-center gap-3">
-                <a
-                  href={p.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="rounded-lg bg-emerald-400 px-3 py-2 text-sm font-semibold text-slate-900 hover:bg-emerald-300 transition"
-                >
-                  View details
-                </a>
+                {/* Show "View details" only for internal detail pages */}
+                {p.href.startsWith("/pages/") && (
+                  <button
+                    onClick={() => openDetails(p.href)}
+                    className="rounded-lg bg-emerald-400 px-3 py-2 text-sm font-semibold text-slate-900 hover:bg-emerald-300 transition"
+                  >
+                    View details
+                  </button>
+                )}
 
                 {p.live && (
                   <a
