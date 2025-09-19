@@ -2,7 +2,7 @@
 
 ## About Me
 
-Hello there! I'm a freshly graduated Junior Developer from Vancouver Island University (VIU). I successfully completed a two-year Diploma program in Web and Mobile Application Development. I am enthusiastic about building dynamic and robust web applications that not only satisfy business needs but also deliver outstanding user experiences.
+Hello there! I'm a Full-stack Web & Mobile App Developer gratuated from Vancouver Island University (VIU). I successfully completed a two-year Diploma program in Web and Mobile Application Development. I am enthusiastic about building dynamic and robust web applications that not only satisfy business needs but also deliver outstanding user experiences.
 
 ## About the Project
 
